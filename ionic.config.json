@@ -1,0 +1,8 @@
+{
+  "name": "Sportive",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "d594e851"
+}
