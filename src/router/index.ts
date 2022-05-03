@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import WelcomePage from '../views/WelcomePage.vue'
 import HomePage from '../views/HomePage.vue'
 import AboutPage from '../views/AboutPage.vue'
+import SigninPage from '../views/SigninPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
    {
@@ -31,7 +32,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component:AboutPage
-  }
+  },
+  {
+    path: '/signin',
+    name: 'Signin',
+    component: SigninPage
+  },
 ]
 
 const router = createRouter({
