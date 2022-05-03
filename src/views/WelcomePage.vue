@@ -1,23 +1,64 @@
 <template>
-<div class="Welcome">
-<h1>sdasdasd</h1>
-</div>
+<ion-content>
+  <div class="Welcome">
+    <div class="img">
+      <img src="/assets/img/football-player-removebg.png" alt="" />
+    </div>
+    <div class="Started">
+      <ion-text>
+        <h2>Sportive</h2>
+      </ion-text>
+      <ion-text>
+        <h5>Welcome to Sportive</h5>
+      </ion-text>
+      <ion-text>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Odit,
+          excepturi maxime laboriosam eos voluptatum
+        </p>
+      </ion-text>
+
+      <ion-button color="tertiary" expand="full" shape="round"
+        >Get Started</ion-button
+      >
+
+      <p>Alleady have account <a href="">Singup </a></p>
+    </div>
+  </div>
+</ion-content>
 </template>
 
 
 <script>
-
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: {  },
-
+  components: {},
 });
 </script>
 <style >
-.Welcome{
-    background: #000;
-    width: 100%;
-    height: 100%;
+.Welcome {
+  background: linear-gradient(to right, #caeeff, #ccc7fd);
+  width: 100%;
+  height: 100%;
+}
+.img {
+  text-align: center;
+}
+img {
+  width: 350px;
+}
+.Started {
+  background: #fff;
+  padding: 50px;
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+}
+.Started h2 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.Started p {
+  font-size: 12px;
 }
 </style>
