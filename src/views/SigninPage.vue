@@ -1,20 +1,33 @@
 <template>
   <ion-content>
-    <div class="mx-auto">
-      <img src="https://media-cdn.grubhub.com/image/upload/v1647377881/eerca5hzaal7iycls8u0.png">
-      <h3 class="ion-padding">Sign In</h3>
-      <ion-input class="ion-margin-bottom" placeholder="Phone / Email"></ion-input>
-      <ion-input class="ion-margin-bottom" type="password" placeholder="password"></ion-input>
-      <ion-button class="main-btn">Sign In</ion-button>
-      <a class="ion-margin-top" href="#">Forget password?</a>
-      <div class="another-way">
+    <ion-row>
+      <ion-col class="mx-auto" size="12">
+        <img src="https://media-cdn.grubhub.com/image/upload/v1647377881/eerca5hzaal7iycls8u0.png">
+        <h3 class="ion-padding">Sign In</h3>
+        <ion-input class="input ion-margin-bottom" placeholder="Phone / Email"></ion-input>
+        <ion-input class="input ion-margin-bottom" type="password" placeholder="password"></ion-input>
+        <ion-button class="main-btn">Sign In</ion-button>
+        <a class="ion-margin-top" href="#">Forget password?</a>
+      </ion-col>
+      <ion-col size="12" class="mx-auto another-way">
         <h4>Sign in with</h4>
-        <ion-buttons>
-          <ion-button>Hi</ion-button>
-          <ion-button>Hi</ion-button>
+        <ion-buttons class="buttons">
+          <ion-button>
+            <a href="#">
+              <i class="fa-brands fa-google fa-2x"></i>
+            </a>
+          </ion-button>
+          <ion-button>
+            <a href="#">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+          </ion-button>
         </ion-buttons>
-      </div>
-    </div>
+      </ion-col>
+      <ion-col class="ion-margin-top mx-auto">
+        Don't have an account? <a style="color: #B22727; font-size: 1.25em;" href="signup">Sign up</a>
+      </ion-col>
+    </ion-row>
   </ion-content>
 </template>
 <style scoped>
@@ -29,8 +42,8 @@
     font-size: 2.5em;
     font-weight: bold;
   }
-  .mx-auto ion-input {
-    width: 95%;
+  .mx-auto .input {
+    width: 99%;
     border-radius: 40px;
     text-indent: 20px;
     background: #F1F4F8;
@@ -39,7 +52,7 @@
     color: #5E686E;
   }
   .mx-auto .main-btn {
-    width: 95%;
+    width: 99%;
     --border-radius: 30px;
     min-height: 50px;
     font-size: 1.4em;
@@ -50,8 +63,8 @@
     color: #fff;
   }
   .mx-auto img {
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
   }
   .mx-auto a {
     color: #475259;
@@ -59,10 +72,25 @@
     font-size: 1.1em;
   }
   .another-way {
-    margin-top: 100px;
+    margin-top: 170px;
   }
   .another-way h4 {
     font-size: 2em;
     color: #0a0615;
+  }
+  .buttons ion-button {
+    height: 60px;
+  }
+  .buttons a {
+    color: #112B3C !important;
+  }
+  @media (max-height: 800px) {
+    .another-way {
+      margin-top: 0px;
+    }
+    .mx-auto img {
+      width: 120px;
+      height: 120px;
+    }
   }
 </style>
