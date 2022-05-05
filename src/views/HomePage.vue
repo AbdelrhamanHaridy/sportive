@@ -69,7 +69,7 @@
         </ion-row>
       </div>
       <div class="cards">
-        <div class="popular-header">
+        <div class="popular-header center-header">
           <div class="content">
             <h3>Popular Workouts</h3>
             <span>Workouts: 80</span>
@@ -105,6 +105,37 @@
             </ion-card>
           </ion-slide>
         </ion-slides>
+      </div>
+      <div class="exercises">
+        <div class="center-header">
+          <div class="content">
+            <h3>Exercises</h3>
+            <span>Exercises: 210</span>
+          </div>
+          <a href="#">View All</a>
+        </div>
+        <ion-item-group class="items">
+          <ion-item lines="none">
+            <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
+            <ion-label class="ion-margin-start">Front and back</ion-label>
+            <i class="fa-solid fa-2x fa-bullseye"></i>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
+            <ion-label class="ion-margin-start">Side Plank</ion-label>
+            <i class="fa-solid fa-2x fa-bullseye"></i>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
+            <ion-label class="ion-margin-start">Arm Circle</ion-label>
+            <i class="fa-solid fa-2x fa-bullseye"></i>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
+            <ion-label class="ion-margin-start">Sumo Squat</ion-label>
+            <i class="fa-solid fa-2x fa-bullseye"></i>
+          </ion-item>
+        </ion-item-group>
       </div>
     </ion-content>
   </ion-app>
@@ -227,19 +258,19 @@ export default defineComponent({
   .cards {
     padding: 16px;
   }
-  .cards .popular-header h3 {
+  .center-header h3 {
     margin: 0;
     margin-bottom: 5px;
   }
-  .cards .popular-header {
+  .center-header {
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
-  .cards .popular-header span {
+  .center-header span {
     color: #727a7f;
   }
-  .cards .popular-header a {
+  .center-header a {
     margin-top: 3px;
     text-decoration: none;
     color: #959ba5;
@@ -282,5 +313,35 @@ export default defineComponent({
     .cates-card .content p {
       font-size: 0.9em;
     }
+  }
+  @media (min-width: 767px) {
+    .cards ion-card ion-card-header {
+      padding: 10px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .cards ion-card ion-card-header {
+      padding: 20px;
+    }
+  }
+  .exercises {
+    padding: 16px;
+  }
+  .items {
+    padding: 0;
+    margin: 0;
+  }
+  .items ion-item {
+    border: 1px solid #e5e9ef;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .items ion-item ion-img {
+    width: 50px;
+    height: 50px;
+  }
+  .items ion-item i {
+    color: #461b93;
   }
 </style>
