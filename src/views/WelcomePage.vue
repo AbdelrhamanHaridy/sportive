@@ -36,7 +36,7 @@ export default defineComponent({
   components: {},
 });
 </script>
-<style >
+<style scoped>
 .Welcome {
   background: linear-gradient(to right, #caeeff, #ccc7fd);
   width: 100%;

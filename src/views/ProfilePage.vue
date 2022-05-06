@@ -146,7 +146,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .flex {
     display: flex;
     padding: 0 10px;

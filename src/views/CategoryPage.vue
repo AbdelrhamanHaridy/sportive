@@ -92,7 +92,7 @@ export default defineComponent({
    }
 });
 </script>
-<style >
+<style scoped>
 ion-item {
   padding: 20px 0;
 }

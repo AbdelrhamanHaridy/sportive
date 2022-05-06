@@ -97,7 +97,7 @@ export default defineComponent({
 
 });
 </script>
-<style>
+<style scoped>
 .ion-card{
 box-shadow:none
 }
