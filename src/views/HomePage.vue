@@ -171,6 +171,7 @@ export default defineComponent({
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
   }
   .flex h2, .flex h3 {
     margin: 0;

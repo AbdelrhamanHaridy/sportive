@@ -8,6 +8,7 @@ import AboutPage from '../views/AboutPage.vue'
 import SigninPage from '../views/SigninPage.vue'
 import SignupPage from '../views/SignupPage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
+import DataPage from '../views/DataPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -81,6 +82,15 @@ const routes: Array<RouteRecordRaw> = [
     path: '/profile',
     name: 'Profile',
     component:ProfilePage
+  },
+    {
+    path: '/',
+    redirect: '/datauser'
+  },
+  {
+    path: '/datauser',
+    name: 'Datauser',
+    component:DataPage
   },
 ]
 
