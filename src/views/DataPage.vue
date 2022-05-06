@@ -1,6 +1,4 @@
 <template>
-
-  <!-- Segment with secondary color -->
   <ion-segment value="standard" v-model="segmant" @ionChange="segmentChanged($event)" color="secondary">
     <ion-segment-button value="standard">
       <ion-label>Standard</ion-label>
