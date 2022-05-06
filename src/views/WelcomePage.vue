@@ -46,7 +46,7 @@ export default defineComponent({
   text-align: center;
 }
 img {
-  width: 350px;
+  width: 280px;
 }
 .Started {
   background: #fff;

@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import WelcomePage from '../views/WelcomePage.vue'
 import HomePage from '../views/HomePage.vue'
 import CategoryPage from '../views/CategoryPage.vue'
+import ClubPage from '../views/ClubPage.vue'
 import AboutPage from '../views/AboutPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -32,6 +33,15 @@ const routes: Array<RouteRecordRaw> = [
     path: '/category',
     name: 'Category',
     component:CategoryPage
+  },
+     {
+    path: '/',
+    redirect: '/club'
+  },
+    {
+    path: '/club',
+    name: 'Club',
+    component:ClubPage
   },
     {
     path: '/',
