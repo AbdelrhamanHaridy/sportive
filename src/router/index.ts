@@ -3,11 +3,14 @@ import { RouteRecordRaw } from 'vue-router';
 import WelcomePage from '../views/WelcomePage.vue'
 import HomePage from '../views/HomePage.vue'
 import CategoryPage from '../views/CategoryPage.vue'
-import ClubPage from '../views/club/ClubPage.vue'
+import ClubPage from '../views/ClubPage.vue'
 import AboutPage from '../views/AboutPage.vue'
+import SigninPage from '../views/SigninPage.vue'
+import SignupPage from '../views/SignupPage.vue'
+import ProfilePage from '../views/ProfilePage.vue'
 
 const routes: Array<RouteRecordRaw> = [
-   {
+  {
     path: '/',
     redirect: '/welcome'
   },
@@ -34,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Category',
     component:CategoryPage
   },
-     {
+    {
     path: '/',
     redirect: '/club'
   },
@@ -51,7 +54,34 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component:AboutPage
-  }
+  },
+    {
+    path: '/',
+    redirect: '/signin'
+  },
+  {
+    path: '/signin',
+    name: 'Signin',
+    component:SigninPage
+  },
+    {
+    path: '/',
+    redirect: '/signup'
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component:SignupPage
+  },
+    {
+    path: '/',
+    redirect: '/profile'
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component:ProfilePage
+  },
 ]
 
 const router = createRouter({
