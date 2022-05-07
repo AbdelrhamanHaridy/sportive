@@ -15,7 +15,7 @@
   </ion-segment>
 
   <ion-content>
-    <div class="step" v-if="segmant == 'standard'">
+    <div class="step" v-show="segmant == 'standard'">
       <div class="content">
         <h3 class="ion-margin-bottom">Choose gender</h3>
         <ion-radio-group>
@@ -37,7 +37,7 @@
         <ion-button v-on:click="second()">Next</ion-button>
       </div>
     </div>
-    <div class="step" v-if="segmant == 'second'">
+    <div class="step" v-show="segmant == 'second'">
       <div class="content content-date">
         <h3 class="ion-margin-bottom">Select Birth Date</h3>
         <ion-datetime presentation="date">
@@ -49,7 +49,7 @@
         <ion-button v-on:click="third()">Next</ion-button>
       </div>
     </div>
-    <div class="step" v-if="segmant == 'third'">
+    <div class="step" v-show="segmant == 'third'">
       <div class="content content-weight">
         <h3 class="ion-margin-bottom">Select goal weight</h3>
         <div class="weight">
@@ -61,11 +61,11 @@
               <ion-label>Pound</ion-label>
             </ion-segment-button>
           </ion-segment>
-          <div class="weight-model" v-if="kiloPound == 'kilogram'">
+          <div class="weight-model" v-show="kiloPound == 'kilogram'">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Kg</ion-label>
           </div>
-          <div class="weight-model" v-if="kiloPound == 'pound'">
+          <div class="weight-model" v-show="kiloPound == 'pound'">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Pound</ion-label>
           </div>
@@ -76,7 +76,7 @@
         <ion-button v-on:click="fourth()">Next</ion-button>
       </div>
     </div>
-    <div class="step" v-if="segmant == 'fourth'">
+    <div class="step" v-show="segmant == 'fourth'">
       <div class="content content-height">
         <h3>Fourth Segmant</h3>
         <div class="height">
@@ -88,11 +88,11 @@
               <ion-label>Feet</ion-label>
             </ion-segment-button>
           </ion-segment>
-          <div class="height-model" v-if="cmFeet == 'cm'">
+          <div class="height-model" v-show="cmFeet == 'cm'">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Cm</ion-label>
           </div>
-          <div class="height-model" v-if="cmFeet == 'feet'">
+          <div class="height-model" v-show="cmFeet == 'feet'">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Feet</ion-label>
           </div>
