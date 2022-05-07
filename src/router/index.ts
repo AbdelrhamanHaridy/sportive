@@ -10,7 +10,7 @@ import SignupPage from '../views/SignupPage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
 import DataPage from '../views/DataPage.vue'
 import SingleclubPage from '../views/club/singleclubPage.vue'
-
+import PaymentPage from '../views/paymentPage.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -95,12 +95,21 @@ const routes: Array<RouteRecordRaw> = [
   },
     {
     path: '/',
-    redirect: '/datauser'
+    redirect: '/single-club'
   },
   {
     path: '/single-club',
     name: 'SingleClub',
     component:SingleclubPage
+  },
+    {
+    path: '/',
+    redirect: '/payment'
+  },
+  {
+    path: '/payment',
+    name: 'Payment',
+    component:PaymentPage
   },
 ]
 
