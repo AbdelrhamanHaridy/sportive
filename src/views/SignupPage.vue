@@ -67,9 +67,8 @@
  
     ion-button {
     --background: #663ab7 !important;
-    --border-radius: 20px;
-    min-height: 50px;
-    font-size: 1.25em;
+    min-height: 40px;
+    font-size: 1em;
     text-transform: capitalize;
   }
   ion-button a {

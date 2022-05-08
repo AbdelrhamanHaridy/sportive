@@ -30,7 +30,7 @@
         </ion-buttons>
       </ion-col>
       <ion-col class="ion-margin-top mx-auto">
-        <p> have an account? <a  href="/signin">Sign up</a></p>
+        <p> have an account? <a  href="/signup">Sign up</a></p>
       </ion-col>
     </ion-row>
   </ion-content>
@@ -65,9 +65,8 @@
  
     ion-button {
     --background: #663ab7 !important;
-    --border-radius: 20px;
-    min-height: 50px;
-    font-size: 1.25em;
+    min-height: 40px;
+    font-size: 1em;
     text-transform: capitalize;
   }
   ion-button a {

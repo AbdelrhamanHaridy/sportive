@@ -13,13 +13,13 @@
 
     <ion-list>
       <ion-item lines="none">
-       <i class="fa-solid fa-dumbbell"></i>
+      <i class="fa-solid fa-dumbbell"></i>
         <div class="content">
           <span>Gym</span>
           <p>06 empty place</p>
 
           </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
       <ion-item lines="none">
@@ -28,7 +28,7 @@
           <span>Swimming</span>
           <p>13 empty place</p>
           </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
       <ion-item lines="none">
@@ -37,7 +37,7 @@
           <span>Football</span>
           <p>05 empty place</p>
           </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
       <ion-item lines="none">
@@ -46,7 +46,7 @@
           <span>Running</span>
           <p>01 empty place</p>
           </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
       <ion-item lines="none">
@@ -55,7 +55,7 @@
           <span>Tennis</span>
           <p>03 empty place</p>
           </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
       <ion-item lines="none"
@@ -64,7 +64,7 @@
           <span>Volleyball</span>
           <p>07 empty place</p>
         </div>
-      <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      <i slot="end" class="fa-solid fa-arrow-right-to-bracket"></i>
         </ion-item
       > 
     </ion-list>
@@ -72,7 +72,7 @@
   </ion-content>
 </template>
 
-<script>
+<script lang="ts">
 import {  IonItem,  IonList } from '@ionic/vue';
 import TapComponent from '../Components/TapComponent.vue';
 import { IonCol, IonGrid, IonRow } from "@ionic/vue";
@@ -111,5 +111,18 @@ ion-item i {
   font-size: 20px;
   background: none;
   border-radius: 15px;
+}
+ion-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+ion-list ion-item {
+  border: 1px solid #e5e9ef;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 10px;
 }
 </style>
