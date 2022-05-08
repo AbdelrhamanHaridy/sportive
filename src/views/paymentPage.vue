@@ -137,7 +137,7 @@ img {
 .blank h3 {
   font-weight: 800;
   font-size: 1.25em;
-  color: #663ab7;
+  color: #39bd86;
 }
 .blank p {
   font-size: 1em;

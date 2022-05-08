@@ -112,7 +112,7 @@ export default defineComponent({
     width: 100% !important;
   }
   .card ion-card ion-card-title {
-    color: #663ab7;
+    color: #39bd86;
   }
   .sport-card {
     display: flex;
@@ -128,7 +128,7 @@ export default defineComponent({
   .sport-card ion-label {
     font-size: 1.1em;
     font-weight: 500;
-    color: #663ab7;
+    color: #39bd86;
   }
   ion-accordion-group {
     margin: 16px;
@@ -151,7 +151,7 @@ export default defineComponent({
   }
   .sign {
     margin: 20px;
-    --background: #663ab7;
+    --background: #39bd86;
     min-height: 50px;
     font-size: 1.2em;
     text-transform: capitalize;

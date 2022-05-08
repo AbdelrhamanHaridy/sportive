@@ -102,7 +102,7 @@ ion-item {
 ion-item i {
   padding: 20px;
   font-size: 20px;
-  background: #e7d3ff;
+  background: #39bd8673;
   border-radius: 15px;
 }
 .fa-arrow-right-to-bracket{
@@ -119,7 +119,7 @@ ion-list {
   margin-top: 40px;
 }
 ion-list ion-item {
-  border: 1px solid #e5e9ef;
+  border: 1px solid #39bd8673;
   margin-bottom: 10px;
   width: 95%;
   border-radius: 10px;

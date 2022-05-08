@@ -133,7 +133,7 @@ export default defineComponent({
     width: 96%;
   }
   ion-button {
-    --background: #663ab7 !important;
+    --background: #39bd86 !important;
     font-size: 1em;
     text-transform: capitalize;
   }
@@ -144,7 +144,7 @@ export default defineComponent({
     padding: 6px;
   }
   .item-radio-checked {
-    border: 2px solid #663ab7 !important;
+    border: 2px solid #39bd86 !important;
   }
   ion-item ion-img {
     width: 50px;
@@ -157,7 +157,7 @@ export default defineComponent({
     flex-direction: column;
   }
   .content .ion-color-primary {
-    --ion-color-base: #663ab7 !important;
+    --ion-color-base: #39bd86 !important;
   }
   .content-weight ion-segment, .content-height ion-segment {
     display: flex;

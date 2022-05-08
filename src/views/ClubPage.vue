@@ -109,7 +109,7 @@ ion-card-title{
 }
 p{
     font-size: 12px;
-    color: #461b93;
+    color: #39bd86;
     font-weight: 700;
 }
 .img-height {

@@ -40,7 +40,7 @@
           </ion-card>
         </ion-col>
       </ion-row>
-      <ion-button class="button-premium" shape="round" expand="block">Go Premium</ion-button>
+      <ion-button class="button-premium" color="primary" shape="round" expand="block">Go Premium</ion-button>
       <div class="accordion">
         <ion-accordion-group class="ion-margin-top">
           <ion-accordion value="account">
@@ -158,7 +158,7 @@ export default {
     padding: 0;
   }
   .flex ion-button {
-    --background: #663ab7;
+    --background: #39bd86;
     --border-radius: 20px;
     text-transform: capitalize;
     /* ffde5d */
@@ -194,7 +194,7 @@ export default {
     align-items: center;
   }
   .feat-card .content i {
-    color: #663ab7;
+    color: #39bd86;
   }
   .feat-card .content p {
     font-size: 1.1em;
@@ -212,7 +212,6 @@ export default {
   .button-premium {
     margin: 32px 16px;
     text-transform: capitalize;
-    --background: #5732ac;
   }
   .accordion {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -224,8 +223,8 @@ export default {
   }
   ion-toggle {
     --background: #e9e9ea;
-    --background-checked: #7a49a5;
-    --handle-background: #7a49a5;
+    --background-checked: #39bd86;
+    --handle-background: #39bd86;
     --handle-background-checked: #fff;
   }
   .accordion .toggle ion-icon {

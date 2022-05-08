@@ -108,22 +108,22 @@
           <ion-item lines="none">
             <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
             <ion-label class="ion-margin-start">Front and back</ion-label>
-            <i class="fa-solid fa-2x fa-bullseye"></i>
+            <i class="fa-solid fa-xl fa-bullseye"></i>
           </ion-item>
           <ion-item lines="none">
             <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
             <ion-label class="ion-margin-start">Side Plank</ion-label>
-            <i class="fa-solid fa-2x fa-bullseye"></i>
+            <i class="fa-solid fa-xl fa-bullseye"></i>
           </ion-item>
           <ion-item lines="none">
             <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
             <ion-label class="ion-margin-start">Arm Circle</ion-label>
-            <i class="fa-solid fa-2x fa-bullseye"></i>
+            <i class="fa-solid fa-xl fa-bullseye"></i>
           </ion-item>
           <ion-item lines="none">
             <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>
             <ion-label class="ion-margin-start">Sumo Squat</ion-label>
-            <i class="fa-solid fa-2x fa-bullseye"></i>
+            <i class="fa-solid fa-xl fa-bullseye"></i>
           </ion-item>
         </ion-item-group>
       </div>
@@ -170,14 +170,14 @@ export default defineComponent({
     --border-radius: 5px !important;
   }
   .flex ion-button i.fa-bell {
-    color: #663ab7 !important;
+    color: #39bd86 !important;
   }
   ion-searchbar {
     --border-radius: 5px !important;
     --background: #f1f4f8 !important;
   }
   ion-icon.searchbar-search-icon {
-    color: #663ab7 !important;
+    color: #39bd86 !important;
   }
   .cates a {
     color: #959ba5;
@@ -203,7 +203,7 @@ export default defineComponent({
     padding: 0;
   }
   .cates-card .content i {
-    color: #663ab7;
+    color: #39bd86;
   }
   .cates-card .content p {
     font-size: 0.9em;
@@ -241,7 +241,7 @@ export default defineComponent({
     color: #232323;
   }
   .fit ion-row ion-button {
-    --background: #663ab7;
+    --background: #39bd86;
     --border-radius: 25px;
     font-size: 1.3em;
     text-transform: capitalize;
@@ -284,7 +284,7 @@ export default defineComponent({
     margin-bottom: 6px;
   }
   .cards ion-card ion-card-subtitle .level {
-    color: #461b93;
+    color: #39bd86;
     font-size: 1.1em;
   }
   .cards ion-card ion-card-subtitle .time {
@@ -337,6 +337,6 @@ export default defineComponent({
     height: 50px;
   }
   .items ion-item i {
-    color: #461b93;
+    color: #39bd86;
   }
 </style>

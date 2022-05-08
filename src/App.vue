@@ -16,3 +16,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+:root {
+  --ion-color-primary: #39bd86 !important;
+}
+</style>

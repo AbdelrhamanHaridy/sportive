@@ -2,8 +2,10 @@
   <ion-content>
     <ion-row>
       <ion-col size="12">
-        <div class="mx-auto">
-          <img src="/assets/img/logo.png">
+        <div class="parent-flex">
+          <div class="mx-auto logo-div">
+            <img src="/assets/img/logo.png">
+          </div>
         </div>
         <div class="mx-auto">
           <h4 class="ion-padding">Sign Up</h4>
@@ -15,7 +17,7 @@
           <ion-input class="input" type="password" placeholder="password"></ion-input>
         </div>
      
-   <ion-button style=" margin-top: 56px;" expand="full" shape="round"
+   <ion-button color="primary" style=" margin-top: 56px;" expand="full" shape="round"
         ><a href="/datauser">Sign Up</a></ion-button
       >
       </ion-col>
@@ -66,7 +68,6 @@
   }
  
     ion-button {
-    --background: #663ab7 !important;
     min-height: 40px;
     font-size: 1em;
     text-transform: capitalize;
@@ -87,7 +88,7 @@
     margin-top: 56px;
   }
   a{
-    color: #744dbd;
+    color: #39bd86;
     text-decoration: none;
   }
   .buttons .fa-google {
@@ -110,5 +111,15 @@
       width: 120px;
       height: 120px;
     }
+  }
+  .logo-div {
+    background: #1877f2;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .parent-flex {
+    display: flex;
+    justify-content: center;
   }
 </style>
