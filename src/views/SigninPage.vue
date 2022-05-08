@@ -1,31 +1,36 @@
 <template>
   <ion-content>
     <ion-row>
-      <ion-col class="mx-auto" size="12">
-        <img src="https://media-cdn.grubhub.com/image/upload/v1647377881/eerca5hzaal7iycls8u0.png">
-        <h3 class="ion-padding">Sign In</h3>
-        <ion-input class="input ion-margin-bottom" placeholder="Phone / Email"></ion-input>
-        <ion-input class="input ion-margin-bottom" type="password" placeholder="password"></ion-input>
-        <ion-button class="main-btn">Sign In</ion-button>
-        <a class="ion-margin-top" href="#">Forget password?</a>
+      <ion-col size="12">
+        <div class="mx-auto">
+          <img src="/assets/img/logo.png">
+        </div>
+        <div class="mx-auto">
+          <h4 class="ion-padding">Sign in</h4>
+        </div>
+        <div class="mx-auto">
+          <ion-input class="input ion-margin-bottom" type="email" placeholder="Email"></ion-input>
+          <ion-input class="input" type="password" placeholder="password"></ion-input>
+        </div>
+     
+   <ion-button style=" margin-top: 56px;" expand="full" shape="round"
+        ><a href="/datauser">Sign in</a></ion-button
+      >
       </ion-col>
       <ion-col size="12" class="mx-auto another-way">
-        <h4>Sign in with</h4>
+        <span>OR</span>
+        <h5><b>Sign in with</b> </h5>
         <ion-buttons class="buttons">
-          <ion-button>
             <a href="#">
               <i class="fa-brands fa-google fa-2x"></i>
             </a>
-          </ion-button>
-          <ion-button>
             <a href="#">
               <i class="fa-brands fa-facebook fa-2x"></i>
             </a>
-          </ion-button>
         </ion-buttons>
       </ion-col>
       <ion-col class="ion-margin-top mx-auto">
-        Don't have an account? <a style="color: #B22727; font-size: 1.25em;" href="signup">Sign up</a>
+        <p> have an account? <a  href="/signin">Sign up</a></p>
       </ion-col>
     </ion-row>
   </ion-content>
@@ -37,54 +42,66 @@
     flex-direction: column;
     align-items: center;
   }
-  .mx-auto h3 {
+  .item-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  h3 {
     color: #0A0615;
     font-size: 2.5em;
     font-weight: bold;
   }
-  .mx-auto .input {
+  .input {
     width: 99%;
     border-radius: 40px;
     text-indent: 20px;
     background: #F1F4F8;
     font-size: 1.25em;
-    min-height: 60px;
+    min-height: 50px;
     color: #5E686E;
   }
-  .mx-auto .main-btn {
-    width: 99%;
-    --border-radius: 30px;
+ 
+    ion-button {
+    --background: #663ab7 !important;
+    --border-radius: 20px;
     min-height: 50px;
-    font-size: 1.4em;
-    --background: linear-gradient(to left, #B22727, #112B3C 100%);
+    font-size: 1.25em;
     text-transform: capitalize;
   }
-  .mx-auto ion-button a {
+  ion-button a {
     color: #fff;
   }
-  .mx-auto img {
-    width: 160px;
-    height: 160px;
+  img {
+    width: 120px;
   }
-  .mx-auto a {
-    color: #475259;
-    text-decoration: none;
-    font-size: 1.1em;
-  }
-  .another-way {
-    margin-top: 170px;
-  }
+
   .another-way h4 {
     font-size: 2em;
     color: #0a0615;
   }
   .buttons ion-button {
     height: 60px;
+    margin-top: 56px;
   }
-  .buttons a {
-    color: #112B3C !important;
+  a{
+    color: #744dbd;
+    text-decoration: none;
   }
-  @media (max-height: 800px) {
+  .buttons .fa-google {
+    color: #ff4901 !important;
+    padding: 5px;
+  }
+   .buttons .fa-facebook {
+    color: #1877f2 !important;
+    padding: 5px;
+
+  }
+  .item-accept {
+    margin-block: 10px;
+  }
+  @media (max-height: 700px) {
     .another-way {
       margin-top: 0px;
     }

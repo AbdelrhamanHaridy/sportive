@@ -24,6 +24,23 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB2O4ail29Z7iFqJbM6pUx7AL6IYVQmaMo",
+  authDomain: "sportive-1d980.firebaseapp.com",
+  projectId: "sportive-1d980",
+  storageBucket: "sportive-1d980.appspot.com",
+  messagingSenderId: "667807316246",
+  appId: "1:667807316246:web:5f1f14427ce8cc5050f837",
+  measurementId: "G-9MRSG2SEGE"
+};
+
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router);

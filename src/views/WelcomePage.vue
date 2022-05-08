@@ -6,7 +6,9 @@
     </div>
     <div class="Started">
       <ion-text>
-        <h2>Sportive</h2>
+        <div class="logo">
+      <img src="/assets/img/logo.png" alt="" />
+        </div>
       </ion-text>
       <ion-text>
         <h5>Welcome to Sportive</h5>
@@ -19,10 +21,10 @@
       </ion-text>
 
       <ion-button color="tertiary" expand="full" shape="round"
-        >Get Started</ion-button
+        ><a href="/datauser">Get Started</a></ion-button
       >
 
-      <p>Alleady have account <a href="">Singup </a></p>
+      <p>Alleady have account <a href="/Singup">Singup </a></p>
     </div>
   </div>
 </ion-content>
@@ -46,8 +48,19 @@ export default defineComponent({
   text-align: center;
 }
 img {
-  width: 280px;
+  width: 300px;
 }
+.logo img{
+  width: 100px;
+
+}
+ 
+
+ion-button a{
+      color: white;
+    text-decoration: none;
+}
+
 .Started {
   background: #fff;
   padding: 50px;

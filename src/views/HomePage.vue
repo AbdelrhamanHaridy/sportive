@@ -1,15 +1,5 @@
 <template>
-  <!-- <ion-slides pager="true" :options="slideOpts">
-    <ion-slide>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci temporibus eveniet saepe. Veniam, similique! Assumenda, at dolorum explicabo totam pariatur, architecto dicta suscipit accusamus corporis, tenetur distinctio. Libero, dolores non?</p>
-    </ion-slide>
-    <ion-slide>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci temporibus eveniet saepe. Veniam, similique! Assumenda, at dolorum explicabo totam pariatur, architecto dicta suscipit accusamus corporis, tenetur distinctio. Libero, dolores non?</p>
-    </ion-slide>
-    <ion-slide>
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci temporibus eveniet saepe. Veniam, similique! Assumenda, at dolorum explicabo totam pariatur, architecto dicta suscipit accusamus corporis, tenetur distinctio. Libero, dolores non?</p>
-    </ion-slide>
-  </ion-slides> -->
+
   <ion-app>
     <ion-content>
       <div class="flex ion-margin-top">
@@ -222,7 +212,7 @@ export default defineComponent({
     margin-bottom: 0;
   }
   .fit {
-    background-image: url(../../public/assets/img/fit-girl.jpg);
+    background-image: url("/public/assets/img/front-view-fit-man-posing-while-wearing-tank-top-holding-water-bottle.jpg");
     height: 300px;
     border-radius: 10px;
     display: flex;

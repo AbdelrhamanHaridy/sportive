@@ -15,6 +15,7 @@
   </ion-segment>
 
   <ion-content>
+    
     <div class="step" v-show="segmant == 'standard'">
       <div class="content">
         <h3 class="ion-margin-bottom">Choose gender</h3>
