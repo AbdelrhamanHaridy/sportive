@@ -74,13 +74,12 @@
 
 <script lang="ts">
 import {  IonItem,  IonList } from '@ionic/vue';
-import TapComponent from '../Components/TapComponent.vue';
 import { IonCol, IonGrid, IonRow } from "@ionic/vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   components: { 
-    IonCol, IonGrid, IonRow ,  IonItem,  IonList, TapComponent
+    IonCol, IonGrid, IonRow ,  IonItem,  IonList
     },
    setup() {
     const form = [
