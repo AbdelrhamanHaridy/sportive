@@ -35,7 +35,7 @@
         </ion-radio-group>
       </div>
       <div class="first">
-        <ion-button v-on:click="second()">Next</ion-button>
+        <ion-button shape="round" v-on:click="second()">Next</ion-button>
       </div>
     </div>
     <div class="step" v-show="segmant == 'second'">
@@ -46,62 +46,38 @@
         </ion-datetime>
       </div>
       <div class="buttons">
-        <ion-button v-on:click="first()">prev</ion-button>
-        <ion-button v-on:click="third()">Next</ion-button>
+        <ion-button shape="round" v-on:click="first()">prev</ion-button>
+        <ion-button shape="round" v-on:click="third()">Next</ion-button>
       </div>
     </div>
     <div class="step" v-show="segmant == 'third'">
       <div class="content content-weight">
         <h3 class="ion-margin-bottom">Select goal weight</h3>
         <div class="weight">
-          <ion-segment v-model="kiloPound" @ionChange="kiloPoundChange($event)" value="kilogram">
-            <ion-segment-button value="kilogram">
-              <ion-label>Kilogram</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="pound">
-              <ion-label>Pound</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-          <div class="weight-model" v-show="kiloPound == 'kilogram'">
+          <div class="weight-model">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Kg</ion-label>
-          </div>
-          <div class="weight-model" v-show="kiloPound == 'pound'">
-            <ion-input class="ion-margin-end" type="number"></ion-input>
-            <ion-label>Pound</ion-label>
           </div>
         </div>
       </div>
       <div class="buttons">
-        <ion-button v-on:click="second()">prev</ion-button>
-        <ion-button v-on:click="fourth()">Next</ion-button>
+        <ion-button shape="round" v-on:click="second()">prev</ion-button>
+        <ion-button shape="round" v-on:click="fourth()">Next</ion-button>
       </div>
     </div>
     <div class="step" v-show="segmant == 'fourth'">
       <div class="content content-height">
-        <h3>Fourth Segmant</h3>
+        <h3>Type Your Height</h3>
         <div class="height">
-          <ion-segment v-model="cmFeet" @ionChange="cmFeetChange($event)" value="cm">
-            <ion-segment-button value="cm">
-              <ion-label>Cm</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="feet">
-              <ion-label>Feet</ion-label>
-            </ion-segment-button>
-          </ion-segment>
-          <div class="height-model" v-show="cmFeet == 'cm'">
+          <div class="height-model">
             <ion-input class="ion-margin-end" type="number"></ion-input>
             <ion-label>Cm</ion-label>
-          </div>
-          <div class="height-model" v-show="cmFeet == 'feet'">
-            <ion-input class="ion-margin-end" type="number"></ion-input>
-            <ion-label>Feet</ion-label>
           </div>
         </div>
       </div>
       <div class="first">
-        <ion-button v-on:click="third()">prev</ion-button>
-        <ion-button>Submit</ion-button>
+        <ion-button shape="round" v-on:click="third()">prev</ion-button>
+        <ion-button shape="round">Submit</ion-button>
       </div>
     </div>
   </ion-content>
@@ -115,12 +91,6 @@ import { defineComponent, ref } from 'vue';
 export default defineComponent({
   components: { IonSegment, IonSegmentButton },
   methods: {
-    kiloPoundChange(ev: CustomEvent) {
-      this.kiloPound = ev.detail.value;
-    },
-    cmFeetChange(ev: CustomEvent) {
-      this.cmFeet = ev.detail.value;
-    },
     segmentChanged(ev: CustomEvent) {
       this.segmant = ev.detail.value;
     },
@@ -139,12 +109,8 @@ export default defineComponent({
   },
   setup() {
     const segmant = ref("standard");
-    const kiloPound = ref("kilogram");
-    const cmFeet = ref("cm");
     return {
       segmant,
-      kiloPound,
-      cmFeet
     }
   },
 });
@@ -168,9 +134,7 @@ export default defineComponent({
   }
   ion-button {
     --background: #663ab7 !important;
-    --border-radius: 20px;
-    min-height: 50px;
-    font-size: 1.25em;
+    font-size: 1em;
     text-transform: capitalize;
   }
   .content ion-radio-group ion-item {
@@ -199,9 +163,6 @@ export default defineComponent({
     display: flex;
     width: 50%;
     margin: 20px auto;
-  }
-  .content-weight .weight {
-    margin: 50px 0;
   }
   .content-weight .weight .weight-model,
   .content-height .height .height-model {

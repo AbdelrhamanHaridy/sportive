@@ -19,7 +19,7 @@
     <ion-row>
          <ion-col size="6"> 
          <ion-card>
-          <img src="/assets/img/braden-collum-9HI8UJMSdZA-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/braden-collum-9HI8UJMSdZA-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Running </ion-card-title>
             <ion-card-subtitle>
@@ -31,7 +31,7 @@
          </ion-col>
         <ion-col size="6"> 
         <ion-card>
-          <img src="/assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Madison, WI</ion-card-title>
             <ion-card-subtitle><p>Old Trafford</p></ion-card-subtitle>
@@ -41,7 +41,7 @@
          </ion-col>
                <ion-col size="6"> 
         <ion-card>
-          <img src="/assets/img/gentrit-sylejmani-JjUyjE-oEbM-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/gentrit-sylejmani-JjUyjE-oEbM-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Madison, WI</ion-card-title>
             <ion-card-subtitle><p>Santiago Bernabéu Stadium</p></ion-card-subtitle>
@@ -51,7 +51,7 @@
          </ion-col>
         <ion-col size="6"> 
         <ion-card>
-          <img src="/assets/img/miguel-teirlinck-VDkRsT649C0-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/miguel-teirlinck-VDkRsT649C0-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Madison, WI</ion-card-title>
             <ion-card-subtitle><p>Maracanã Stadium</p></ion-card-subtitle>
@@ -61,7 +61,7 @@
          </ion-col>
               <ion-col size="6"> 
         <ion-card>
-          <img src="/assets/img/victor-freitas-hOuJYX2K5DA-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/victor-freitas-hOuJYX2K5DA-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Madison, WI</ion-card-title>
             <ion-card-subtitle><p>Allianz Arena</p></ion-card-subtitle>
@@ -71,7 +71,7 @@
          </ion-col>
               <ion-col size="6"> 
         <ion-card>
-          <img src="/assets/img/wesley-tingey-dKCKiC0BQtU-unsplash.jpg" />
+          <img class="img-height" src="/assets/img/wesley-tingey-dKCKiC0BQtU-unsplash.jpg" />
           <ion-card-header>
             <ion-card-title>Madison, WI</ion-card-title>
             <ion-card-subtitle><p>San Siro Stadium</p></ion-card-subtitle>
@@ -88,7 +88,7 @@
 
 </template>
 
-<script>
+<script lang="ts">
 import { IonCol, IonGrid, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
@@ -111,5 +111,29 @@ p{
     font-size: 12px;
     color: #461b93;
     font-weight: 700;
+}
+.img-height {
+  height: 500px;
+  width: 100%;
+}
+@media (max-width:1200px) {
+  .img-height {
+    height: 400px;
+  }
+}
+@media (max-width:900px) {
+  .img-height {
+    height: 300px;
+  }
+}
+@media (max-width:720px) {
+  .img-height {
+    height: 180px;
+  }
+}
+@media (max-width:600px) {
+  .img-height {
+    height: 140px;
+  }
 }
 </style>

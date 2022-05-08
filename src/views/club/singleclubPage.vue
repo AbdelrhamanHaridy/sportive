@@ -147,6 +147,7 @@ export default defineComponent({
   }
   ion-accordion-group ion-accordion .content {
     padding-bottom: 10px;
+    font-size: 14px;
   }
   .sign {
     margin: 20px;
@@ -162,6 +163,11 @@ export default defineComponent({
   @media (max-width: 420px) {
     .sport-card ion-label {
       font-size: 0.8em;
+    }
+  }
+  @media (min-width: 767px) {
+    .card ion-card ion-slides ion-img {
+      height: 400px !important;
     }
   }
 </style>

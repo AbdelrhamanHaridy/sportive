@@ -40,7 +40,7 @@
           </ion-card>
         </ion-col>
       </ion-row>
-      <ion-button class="button-premium" expand="block">Go Premium</ion-button>
+      <ion-button class="button-premium" shape="round" expand="block">Go Premium</ion-button>
       <div class="accordion">
         <ion-accordion-group class="ion-margin-top">
           <ion-accordion value="account">
@@ -140,7 +140,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   
 }
@@ -206,11 +206,11 @@ export default {
     color: #232323;
     text-decoration: none;
   }
+  ion-item p {
+    font-size: 14px;
+  }
   .button-premium {
     margin: 32px 16px;
-    --border-radius: 20px;
-    min-height: 50px;
-    font-size: 1.25em;
     text-transform: capitalize;
     --background: #5732ac;
   }
