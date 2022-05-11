@@ -10,7 +10,7 @@
     </ion-grid>
 
     <!-- Default Searchbar -->
-
+    <ion-searchbar></ion-searchbar>
     <ion-list>
       <ion-radio-group>
         <ion-item lines="none">
@@ -90,14 +90,14 @@ export default defineComponent({
   components: { 
     IonCol, IonGrid, IonRow ,  IonItem,  IonList
     },
-   setup() {
+  setup() {
     const form = [
       { val: 'Pepperoni', isChecked: true },
       { val: 'Sausage', isChecked: false },
       { val: 'Mushroom', isChecked: false }
     ];
-       return { form };
-   }
+      return { form };
+  }
 });
 </script>
 <style scoped>
@@ -116,7 +116,6 @@ ion-list {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
 }
 ion-radio-group {
   width: 100% !important;
@@ -133,5 +132,13 @@ ion-list ion-radio-group ion-item i {
 }
 .item-checkbox-checked {
   border: 2px solid #39bd8673;
+}
+ion-searchbar {
+  margin: 0 auto;
+  padding: 2.5%;
+  --background: #eee;
+  --border: none;
+  --box-shadow: none;
+  --border-radius: 20px;
 }
 </style>

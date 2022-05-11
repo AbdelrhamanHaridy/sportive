@@ -1,5 +1,13 @@
 <template>
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="5">
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </ion-col>
+      <ion-col size="6"> Payment </ion-col>
+    </ion-row>
+  </ion-grid>
   <div class="payment">
     <div class="img">
       <img src="/assets/img/payments.jpg" alt="" />
