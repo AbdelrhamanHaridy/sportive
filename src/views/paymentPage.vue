@@ -1,5 +1,13 @@
 <template>
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="5">
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </ion-col>
+      <ion-col size="6"> Payment </ion-col>
+    </ion-row>
+  </ion-grid>
   <div class="payment">
     <div class="img">
       <img src="/assets/img/payments.jpg" alt="" />
@@ -83,15 +91,8 @@
             <ion-input type="number" placeholder="xxxx-xxxx-xxxx-xxxx"></ion-input>
           </ion-item>
           <div class="payment-card ion-margin-bottom">
-            <a href="#">
-              <img src="https://www.mastercard.com.eg/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="https://www.mastercard.com.eg/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="https://www.mastercard.com.eg/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="">
-            </a>
+            <img src="../../public/assets/img/mastercard.png" alt="">
+            <img src="../../public/assets/img/visa.png" alt="">
           </div>
             <ion-label>Expiration Date</ion-label>
           <ion-item>
@@ -112,7 +113,7 @@
         <ion-text>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Odit,</p>
         </ion-text>
-        <ion-button shape="round">Paypal</ion-button>
+        <ion-button shape="round"><a href="#">Paypal</a></ion-button>
       </div>
     </div>
   </div>
@@ -263,5 +264,14 @@ form img {
 }
 .checkout-paypal, .personal-details, .payment-information {
   margin-top: 40px;
+}
+.payment-card img {
+  width: 50px !important;
+  height: 50px;
+  margin-inline-end: 15px;
+}
+ion-button a {
+  color: #fff;
+  text-decoration: none;
 }
 </style>

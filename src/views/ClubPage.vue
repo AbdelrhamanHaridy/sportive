@@ -9,6 +9,8 @@
         </ion-col>
         <ion-col size="7" >All Clubs </ion-col>
 
+        <ion-searchbar></ion-searchbar>
+
       </ion-row>
 
           <ion-col  size="12"> 
@@ -135,5 +137,12 @@ p{
   .img-height {
     height: 140px;
   }
+}
+ion-searchbar {
+  margin: 0 auto;
+  --background: #eee;
+  --border: none;
+  --box-shadow: none;
+  --border-radius: 20px;
 }
 </style>

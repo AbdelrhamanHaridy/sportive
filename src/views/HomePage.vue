@@ -2,6 +2,14 @@
 
   <ion-app>
     <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="5">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </ion-col>
+          <ion-col size="6"> Home </ion-col>
+        </ion-row>
+      </ion-grid>
       <div class="flex ion-margin-top">
         <h2>Hi, Deborah</h2>
         <ion-button color="none">
@@ -174,9 +182,12 @@ export default defineComponent({
     color: #39bd86 !important;
   }
   ion-searchbar {
-    --border-radius: 5px !important;
-    --background: #f1f4f8 !important;
-  }
+  margin: 0 auto;
+  --background: #eee;
+  --border: none;
+  --box-shadow: none;
+  --border-radius: 20px;
+}
   ion-icon.searchbar-search-icon {
     color: #39bd86 !important;
   }
