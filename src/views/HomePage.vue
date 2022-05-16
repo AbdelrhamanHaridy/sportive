@@ -104,6 +104,7 @@
           </div>
           <a href="#">View All</a>
         </div>
+        
         <ion-item-group class="items">
           <ion-item lines="none">
             <ion-img src="https://www.pngkey.com/png/full/31-318973_so-sportsicon-athletics-reversed-circle-sports-icon-circle.png"></ion-img>

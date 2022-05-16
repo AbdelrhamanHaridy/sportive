@@ -23,7 +23,7 @@
       </ion-text>
 
       <ion-button color="primary" expand="full" shape="round"
-        ><a href="/datauser">Get Started</a></ion-button
+        ><a href="/login">Get Started</a></ion-button
       >
 
       <p>Alleady have account <a href="/signup">Singup </a></p>
@@ -64,7 +64,7 @@ ion-button a{
 
 .Started {
   background: #fff;
-  padding: 50px;
+  padding: 75px;
   border-radius: 50px 50px 0 0;
   text-align: center;
 }

@@ -1,51 +1,56 @@
 <template>
-  <ion-content>
-    <ion-row>
-      <ion-col size="12">
+            <ion-page>
+    <ion-content>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Create Account Page</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content :fullscreen="true" class="ion-padding">
+              <ion-col size="12">
         <div class="parent-flex">
           <div class="mx-auto logo-div">
             <img src="/assets/img/logo.png">
           </div>
         </div>
+              </ion-col>
         <div class="mx-auto">
           <h4 class="ion-padding">Sign Up</h4>
         </div>
-        <div class="mx-auto">
-          <ion-input class="input ion-margin-bottom" type="text" placeholder="Full Name"></ion-input>
-          <ion-input class="input ion-margin-bottom" type="email" placeholder="Email"></ion-input>
-          <ion-input class="input ion-margin-bottom" type="phone" placeholder="Phone"></ion-input>
-          <ion-input class="input" type="password" placeholder="password"></ion-input>
-        </div>
-     
-   <ion-button color="primary" style=" margin-top: 56px;" expand="full" shape="round"
-        ><a href="/datauser">Sign Up</a></ion-button
-      >
-      </ion-col>
-      <ion-col size="12" class="mx-auto another-way">
-        <span>OR</span>
-        <h5><b>Sign in with</b> </h5>
-        <ion-buttons class="buttons">
-            <a href="#">
-              <i class="fa-brands fa-google fa-2x"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-facebook fa-2x"></i>
-            </a>
-        </ion-buttons>
-      </ion-col>
-      <ion-col class="ion-margin-top mx-auto">
-        <p> have an account? <a  href="/signin">Sign in</a></p>
-      </ion-col>
-    </ion-row>
-  </ion-content>
+            <div class="ion-padding">{{ store.error }}</div>
+            <form class="login-form" autocomplete="off">
+                <ion-item lines="full">
+                    <ion-label position="floating">First Name</ion-label>
+                    <ion-input  v-model="first" type="text" id="first" name="first"  autocomplete="off"></ion-input>
+                </ion-item>
+                <ion-item lines="full">
+                    <ion-label position="floating">Last Name</ion-label>
+                    <ion-input v-model="last" type="text" id="last"  name="last"  autocomplete="off"></ion-input>
+                </ion-item>
+                <ion-item lines="full">
+                    <ion-label position="floating">Email</ion-label>
+                    <ion-input v-model="email" type="email"  ></ion-input>
+                </ion-item>
+                <ion-item lines="full">
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input v-model="password" type="password"   autocomplete="new-password"></ion-input>
+                </ion-item>
+                <ion-button expand="block" @click="doCreateAccount">Create Account</ion-button>
+            </form>
+        </ion-content>
+        </ion-content>
+    </ion-page>  
+  
 </template>
 
 <script lang="ts">
 import { useAuthStore } from "@/store"
+import { IonLabel, IonInput, IonButton, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, IonPage } from '@ionic/vue';
 import { defineComponent, ref } from 'vue';
 import { useRouter } from "vue-router";
 export default defineComponent({
     name: 'LoginPage',
+    components: { IonLabel, IonInput, IonButton, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, IonPage },
     setup() {
         const store = useAuthStore()
         const router = useRouter()
@@ -65,6 +70,7 @@ export default defineComponent({
     }
 });
 </script>
+
 <style scoped>
   .mx-auto {
     display: flex;

@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
-import TapComponent from './Components/TapComponent.vue';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -24,27 +23,23 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import { createPinia } from "pinia";
+import { useAuthStore } from "./store";
+const pine = createPinia();
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyB2O4ail29Z7iFqJbM6pUx7AL6IYVQmaMo",
-  authDomain: "sportive-1d980.firebaseapp.com",
-  projectId: "sportive-1d980",
-  storageBucket: "sportive-1d980.appspot.com",
-  messagingSenderId: "667807316246",
-  appId: "1:667807316246:web:5f1f14427ce8cc5050f837",
-  measurementId: "G-9MRSG2SEGE"
-};
+const app = createApp(App).use(IonicVue).use(pine);
 
+// get the store
+const store = useAuthStore();
 
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
-
-const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
-  
-router.isReady().then(() => {
-  app.mount('#app');
+// initialize auth listener to see if we
+// have a user at startup
+store.initializeAuthListener().then(() => {
+  app.use(router).mount("#app");
 });
+
+
+
+
+
+
