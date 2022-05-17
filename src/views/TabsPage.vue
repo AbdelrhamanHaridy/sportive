@@ -12,7 +12,7 @@
            <i class="fa-solid fa-basketball fa-2x"></i>
           <ion-label>Club</ion-label>
         </ion-tab-button>
-        <ion-tab-button tab="tab2" href="/tabs/tab3">
+        <ion-tab-button tab="tab3" href="/tabs/tab3">
          <i class="fa-solid fa-sliders fa-2x"></i>
           <ion-label>Settings</ion-label>
         </ion-tab-button>

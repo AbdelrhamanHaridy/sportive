@@ -1,5 +1,14 @@
 <template>
+  
   <ion-content class="ion-margin-top">
+    <ion-row>
+      <ion-col size="5">
+        <a href="/club" class="rout-link">
+          <i class="fa-solid fa-lg fa-arrow-left-long"></i>
+        </a>
+      </ion-col>
+      <ion-col size="7" >All Clubs</ion-col>
+    </ion-row>
     <div class="card">
       <ion-card>
         <ion-slides :options="opation">
@@ -169,5 +178,8 @@ export default defineComponent({
     .card ion-card ion-slides ion-img {
       height: 400px !important;
     }
+  }
+  .rout-link {
+    color: #232323;
   }
 </style>

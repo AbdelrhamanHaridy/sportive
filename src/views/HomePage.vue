@@ -5,7 +5,7 @@
       <ion-grid>
         <ion-row>
           <ion-col size="5">
-            <i class="fa-solid fa-arrow-left-long"></i>
+
           </ion-col>
           <ion-col size="6"> Home </ion-col>
         </ion-row>
@@ -13,7 +13,8 @@
       <div class="flex ion-margin-top">
         <h2>Hi, Deborah</h2>
         <ion-button color="none">
-          <i class="fa-regular fa-bell"></i>
+          <i class="fa-regular fa-xl fa-bell"></i>
+          <ion-badge color="primary">9</ion-badge>
         </ion-button>
       </div>
       <ion-searchbar placeholder="Search Something"></ion-searchbar>
@@ -62,7 +63,7 @@
           <ion-col size="10" size-md="12">
             <h4>Full Body Toning Workout</h4>
             <p>Includes circuits to work every muscels</p>
-            <ion-button>Start Training</ion-button>
+            <ion-button href="/club">Start Training</ion-button>
           </ion-col>
         </ion-row>
       </div>
@@ -350,5 +351,11 @@ export default defineComponent({
   }
   .items ion-item i {
     color: #39bd86;
+  }
+  ion-badge {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    height: 18px;
   }
 </style>

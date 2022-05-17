@@ -5,7 +5,9 @@
       <ion-row>
 
         <ion-col size="5">
-          <i class="fa-solid fa-arrow-left-long"></i>
+          <a href="/home" class="rout-link">
+            <i class="fa-solid fa-lg fa-arrow-left-long"></i>
+          </a>
         </ion-col>
         <ion-col size="7" >All Clubs </ion-col>
 
@@ -14,7 +16,7 @@
       </ion-row>
 
           <ion-col  size="12"> 
-              <ion-card  class="ion-card "	>
+              <ion-card  class="ion-card">
           <img class="img" src="/assets/img/ken-russo-IrWOJ1F5Tv4-unsplash.jpg" />
               </ion-card>
          </ion-col>
@@ -144,5 +146,8 @@ ion-searchbar {
   --border: none;
   --box-shadow: none;
   --border-radius: 20px;
+}
+.rout-link {
+  color: #232323;
 }
 </style>

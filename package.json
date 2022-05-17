@@ -15,7 +15,7 @@
 		"@capacitor/haptics": "1.1.4",
 		"@capacitor/keyboard": "1.2.2",
 		"@capacitor/status-bar": "1.0.8",
-		"@ionic/vue": "^0.5.0",
+		"@ionic/vue": "^6.1.5",
 		"@ionic/vue-router": "^0.4.0",
 		"@vuelidate/core": "^2.0.0-alpha.41",
 		"@vuelidate/validators": "^2.0.0-alpha.29",

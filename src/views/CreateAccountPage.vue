@@ -17,26 +17,29 @@
         <div class="mx-auto">
           <h4 class="ion-padding">Sign Up</h4>
         </div>
-            <div class="ion-padding">{{ store.error }}</div>
+            <div>{{ store.error }}</div>
             <form class="login-form" autocomplete="off">
-                <ion-item lines="full">
-                    <ion-label position="floating">First Name</ion-label>
-                    <ion-input  v-model="first" type="text" id="first" name="first"  autocomplete="off"></ion-input>
-                </ion-item>
-                <ion-item lines="full">
-                    <ion-label position="floating">Last Name</ion-label>
-                    <ion-input v-model="last" type="text" id="last"  name="last"  autocomplete="off"></ion-input>
-                </ion-item>
-                <ion-item lines="full">
-                    <ion-label position="floating">Email</ion-label>
-                    <ion-input v-model="email" type="email"  ></ion-input>
-                </ion-item>
-                <ion-item lines="full">
-                    <ion-label position="floating">Password</ion-label>
-                    <ion-input v-model="password" type="password"   autocomplete="new-password"></ion-input>
-                </ion-item>
-                <ion-button expand="block" @click="doCreateAccount">Create Account</ion-button>
+              <ion-input placeholder="First Name"  v-model="first" type="text" id="first" name="first"  autocomplete="off"></ion-input>
+              <ion-input placeholder="Last Name" v-model="last" type="text" id="last"  name="last"  autocomplete="off"></ion-input>
+              <ion-input placeholder="Email" v-model="email" type="email"  ></ion-input>
+              <ion-input placeholder="Password" v-model="password" type="password" autocomplete="new-password"></ion-input>
+              <ion-button expand="full" shape="round" @click="doCreateAccount">Create Account</ion-button>
             </form>
+            <ion-col size="12" class="mx-auto another-way">
+              <span>OR</span>
+              <h5><b>Sign in with</b> </h5>
+              <ion-buttons class="buttons">
+                  <a href="#">
+                    <i class="fa-brands fa-google fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                  </a>
+              </ion-buttons>
+            </ion-col>
+            <ion-col class="ion-margin-top mx-auto">
+              <p> have an account? <a  href="/login">Sign in</a></p>
+            </ion-col>
         </ion-content>
         </ion-content>
     </ion-page>  
@@ -45,12 +48,12 @@
 
 <script lang="ts">
 import { useAuthStore } from "@/store"
-import { IonLabel, IonInput, IonButton, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, IonPage } from '@ionic/vue';
+import { IonInput, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, IonPage } from '@ionic/vue';
 import { defineComponent, ref } from 'vue';
 import { useRouter } from "vue-router";
 export default defineComponent({
     name: 'LoginPage',
-    components: { IonLabel, IonInput, IonButton, IonItem, IonContent, IonHeader, IonTitle, IonToolbar, IonPage },
+    components: { IonInput, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, IonPage },
     setup() {
         const store = useAuthStore()
         const router = useRouter()
@@ -130,7 +133,6 @@ export default defineComponent({
    .buttons .fa-facebook {
     color: #1877f2 !important;
     padding: 5px;
-
   }
   .item-accept {
     margin-block: 10px;
@@ -153,5 +155,15 @@ export default defineComponent({
   .parent-flex {
     display: flex;
     justify-content: center;
+  }
+  ion-input {
+    width: 99%;
+    border-radius: 40px;
+    text-indent: 20px;
+    background: #F1F4F8;
+    font-size: 1.25em;
+    min-height: 50px;
+    color: #5E686E;
+    margin: 16px 0;
   }
 </style>
