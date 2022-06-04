@@ -23,20 +23,20 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-import { createPinia } from "pinia";
-import { useAuthStore } from "./store";
-const pine = createPinia();
+/* Tailwindcss */
+import '../public/assets/css/style.css';
 
-const app = createApp(App).use(IonicVue).use(pine);
+import store from './store/index';
 
-// get the store
-const store = useAuthStore();
+const app = createApp(App)
+  .use(IonicVue)
+  .use(router)
+  .use(store);
+  
 
-// initialize auth listener to see if we
-// have a user at startup
-store.initializeAuthListener().then(() => {
-  app.use(router).mount("#app");
-});
+  router.isReady().then(() => {
+    app.mount('#app');
+  });
 
 
 

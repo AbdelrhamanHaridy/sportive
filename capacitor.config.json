@@ -1,6 +1,14 @@
 {
 	"appId": "io.ionic.starter",
-	"appName": "Sportive",
+	"appName": "todo-list",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
 	"webDir": "dist",
-	"bundledWebRuntime": false
-}
+	"plugins": {
+	  "SplashScreen": {
+		"launchShowDuration": 0
+	  }
+	},
+	"cordova": {}
+  }
+  

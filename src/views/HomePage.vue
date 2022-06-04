@@ -7,7 +7,7 @@
           <ion-col size="5">
 
           </ion-col>
-          <ion-col size="6"> Home </ion-col>
+          <ion-col size="6"> House </ion-col>
         </ion-row>
       </ion-grid>
       <div class="flex ion-margin-top">

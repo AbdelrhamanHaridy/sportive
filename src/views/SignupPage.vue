@@ -49,27 +49,13 @@
 </template>
 
 <script lang="ts">
-import { useAuthStore } from "@/store"
-import { defineComponent, ref } from 'vue';
-import { useRouter } from "vue-router";
+import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'LoginPage',
     setup() {
-        const store = useAuthStore()
-        const router = useRouter()
-        const email = ref('');
-        const password = ref('');
-        const first = ref('');
-        const last = ref('');
-
-        /**
-         * 
-         */
-        const doCreateAccount = async () => {
-            await store.createAccount(email.value, password.value, first.value, last.value);
-            router.replace("/tabs/tab1");
-        }
-        return { email, password, doCreateAccount, store, first, last }
+       
+        
+        return {  }
     }
 });
 </script>

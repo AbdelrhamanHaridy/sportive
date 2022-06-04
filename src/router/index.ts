@@ -1,11 +1,9 @@
-import { useAuthStore } from "@/store";
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import WelcomePage from '../views/WelcomePage.vue';
 import HomePage from '../views/HomePage.vue';
-import ShowPage from '../views/ShowPage.vue';
 import CategoryPage from '../views/CategoryPage.vue';
-import ClubPage from '../views/ClubPage.vue';
+import ClubPage from '../views/club/ClubPage.vue';
 import AboutPage from '../views/AboutPage.vue';
 import SigninPage from '../views/SigninPage.vue';
 import SignupPage from '../views/SignupPage.vue';
@@ -13,51 +11,18 @@ import ProfilePage from '../views/ProfilePage.vue';
 import DataPage from '../views/DataPage.vue';
 import SingleclubPage from '../views/club/singleclubPage.vue';
 import PaymentPage from '../views/paymentPage.vue';
-import SimpleModal from '../views/SimpleModal.vue';
-import TabsPage from "../views/TabsPage.vue";
-/**
- * 
- * @param to 
- * @param from 
- * @param next 
- */
-const authCheck = (to: any, from: any, next: any) => {
-  const store = useAuthStore();
-  console.log("authCheck", store.isLoggedIn);
-  if (store.isLoggedIn) {
-    if (to.name === "login") {
-      next({ name: "tab1" });
-    } else {
-      next();
-    }
-  } else {
-    if (to.name === "login") {
-      next();
-    } else {
-      next({ name: "login" });
-    }
-  }
-};
+import House from '../views/booking/House.vue'
+import Lists from '../views/booking/Lists.vue';
+import All from '../views/booking/All.vue';
+import Work from '../views/booking/Work.vue';
+import Music from '../views/booking/Music.vue';
+import Travel from '../views/booking/Travel.vue';
+import Study from '../views/booking/Study.vue';
+import Sport from '../views/booking/Sport.vue';
+import Shopping from '../views/booking/Shopping.vue'; 
 
 const routes: Array<RouteRecordRaw> = [
-    {
-    path: '/',
-    redirect: '/show'
-  },
-  {
-    path: '/show',
-    name: 'Show',
-    component: ShowPage
-  },
-   {
-    path: '/',
-    redirect: '/simple'
-  },
-  {
-    path: '/simple',
-    name: 'Simple',
-    component: SimpleModal
-  }, 
+  
   {
     path: '/',
     redirect: '/welcome'
@@ -158,41 +123,55 @@ const routes: Array<RouteRecordRaw> = [
     component:PaymentPage
   },
   {
-    name: "login",
-    path: "/login",
-    component: () => import("@/views/LoginPage.vue"),
-    beforeEnter: authCheck,
+    path: '/',
+    redirect: '/Lists'
   },
   {
-    name: "create-account",
-    path: "/create-account",
-    component: () => import("@/views/CreateAccountPage.vue"),
+    path: '/Lists',
+    name: 'Lists',
+    component: Lists
   },
   {
-    path: "/",
-    redirect: "/tabs/tab1",
+    path: '/House',
+    name: 'House',
+    component: House
   },
   {
-    path: "/tabs/",
-    component: TabsPage,
-    children: [
-      {
-        path: "",
-        redirect: "/tabs/tab1",
-      },
-      {
-        path: "tab1",
-        name: "tab1",
-        component: () => import("@/views/Tab1Page.vue"),
-        beforeEnter: authCheck,
-      },
-      {
-        path: "tab2",
-        component: () => import("@/views/Tab2Page.vue"),
-        beforeEnter: authCheck,
-      },
-    ]
+    path: '/All',
+    name: 'All',
+    component: All
   },
+  {
+    path: '/Work',
+    name: 'Work',
+    component: Work
+  },
+  {
+    path: '/Music',
+    name: 'Music',
+    component: Music
+  },
+  {
+    path: '/Travel',
+    name: 'Travel',
+    component: Travel
+  },
+  {
+    path: '/Study',
+    name: 'Study',
+    component: Study
+  },
+  {
+    path: '/Sport',
+    name: 'Sport',
+    component: Sport
+  },
+  {
+    path: '/Shopping',
+    name: 'Shopping',
+    component: Shopping
+  }
+
   // { path: "*", redirect: "/" },
 ];
 const router = createRouter({
