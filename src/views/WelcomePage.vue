@@ -85,4 +85,7 @@ ion-button a{
     display: flex;
     justify-content: center;
   }
+.img img {
+  margin: 0 auto;
+}
 </style>

@@ -33,7 +33,7 @@
                 <p>{{posts.des}}</p>
                 </ion-card-subtitle>
                 
-   <ion-button >See Club</ion-button>
+            <ion-button href="/single-club">See Club</ion-button>
           </ion-card-header>
 
         </ion-card>

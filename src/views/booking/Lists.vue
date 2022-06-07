@@ -229,6 +229,8 @@ export default defineComponent({
 })
 </script>
 
-<style>
-
+<style scoped>
+    a {
+        text-align: center;
+    }
 </style>

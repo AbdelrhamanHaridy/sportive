@@ -1,13 +1,13 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar color="dark">
+      <ion-toolbar color="primary">
         <ion-title> Thanks </ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <div class="flex-center">
-        <ion-icon :icon="checkmarkCircle" color="success"></ion-icon>
+        <ion-icon :icon="checkmarkCircle" color="secondary"></ion-icon>
         <div class="ion-padding">
           <ion-text color="dark">
             <h2 class="bold">Order Successfully Placed</h2>
@@ -20,7 +20,7 @@
             <ion-button
               size="large"
               shape="round"
-              color="dark"
+              color="primary"
               expand="block"
               @click="onHomeButtonTouched"
             >
@@ -77,7 +77,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 h2.text {
   font-size: 2rem;
 }
@@ -88,5 +88,13 @@ h2.text {
 
 ion-icon {
   font-size: 6em;
+}
+.flex-center {
+  text-align: center;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>

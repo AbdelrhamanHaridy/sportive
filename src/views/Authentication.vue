@@ -75,7 +75,7 @@ import {
   IonItem,
 } from "@ionic/vue";
 
-import { auth, db } from "../main";
+// import { auth, db } from "../main";
 import { reactive, toRefs } from "vue";
 import { useRouter } from "vue-router";
 
@@ -122,10 +122,10 @@ export default {
           return;
         }
 
-        await auth.signInWithEmailAndPassword(email, password);
+        // await auth.signInWithEmailAndPassword(email, password);
         router.push("/tabs/tab1");
       } catch (error) {
-        state.errorMsg = error.message;
+        // state.errorMsg = error.message;
       }
     };
 
@@ -140,19 +140,19 @@ export default {
           return;
         }
 
-        const authRes = await auth.createUserWithEmailAndPassword(
-          email,
-          password
-        );
+        // const authRes = await auth.createUserWithEmailAndPassword(
+        //   email,
+        //   password
+        // );
 
-        db.collection("users").doc(authRes.user?.uid).set({
-          name,
-          email,
-        });
+        // db.collection("users").doc(authRes.user?.uid).set({
+        //   name,
+        //   email,
+        // });
 
         router.push("/tabs/tab1");
       } catch (error) {
-        state.errorMsg = error.message;
+        // state.errorMsg = error.message;
       }
     };
 
