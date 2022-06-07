@@ -11,12 +11,12 @@
         <ion-content class="overflow-auto">
             <div class="flex flex-col justify-center items-center mt-2">
                 <div class="text-center">
-                    <ion-icon :icon="airplane" size="large" class="text-green-400"></ion-icon>
+                                <i class="fa-solid fa-table-tennis-paddle-ball fa-2x" style="color: #f87171;"></i>
                 </div>
 
                 <div class="text-center">
-                    <ion-card-title class="text-2xl">Travel</ion-card-title>
-                    <ion-card-subtitle>{{state.tasksTravel.length}} Tasks</ion-card-subtitle>
+                    <ion-card-title class="text-2xl">Bang Bong</ion-card-title>
+                    <ion-card-subtitle>{{state.tasksTravel.length}} Appointment</ion-card-subtitle>
                 </div>
             </div>
 

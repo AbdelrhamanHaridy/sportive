@@ -16,7 +16,7 @@
 
                 <div class="text-center">
                     <ion-card-title class="text-2xl">All</ion-card-title>
-                    <ion-card-subtitle>{{state.tasks.length}} Tasks</ion-card-subtitle>
+                    <ion-card-subtitle>{{state.tasks.length}} Appointment</ion-card-subtitle>
                 </div>
             </div>
 
@@ -58,7 +58,10 @@
                         <ion-item detail="true">
                             <ion-label>
                                 <h2>{{item.task}}</h2>
-                                <p>{{item.dueDate}}</p>
+                                <div class="" style=" text-align: end">
+                                    <p>{{item.dueDate}}</p>
+                                </div>
+                               <ion-button color="primary">Payment</ion-button>
                             </ion-label>
                         </ion-item>
                         <ion-item-options side="end">
@@ -82,7 +85,11 @@
                         <ion-item detail="true">
                             <ion-label>
                                 <h2>{{item.task}}</h2>
-                                <p>{{item.dueDate}}</p>
+                                <div class="" style=" text-align: end">
+                                    <p>{{item.dueDate}}</p>
+                                </div>
+                                    <ion-button href="/payment"  color="primary">Payment</ion-button>
+
                             </ion-label>
                         </ion-item>
                         <ion-item-options side="end">
@@ -106,7 +113,9 @@
                         <ion-item detail="true">
                             <ion-label>
                                 <h2 style="color:#3490dc"><s>{{item.task}}</s></h2>
-                                <p><s>{{item.dueDate}}</s></p>
+                                <p><s>{{item.dueDate}}</s></p>#
+                                  <ion-button href="/payment" color="primary">Payment</ion-button>
+
                             </ion-label>
                         </ion-item>
                         <ion-item-options side="end">

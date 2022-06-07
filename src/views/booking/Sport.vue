@@ -15,8 +15,8 @@
                 </div>
 
                 <div class="text-center">
-                    <ion-card-title class="text-2xl">Sport</ion-card-title>
-                    <ion-card-subtitle>{{state.tasksSport.length}} Tasks</ion-card-subtitle>
+                    <ion-card-title class="text-2xl">Football</ion-card-title>
+                    <ion-card-subtitle>{{state.tasksSport.length}} Appointment</ion-card-subtitle>
                 </div>
             </div>
 

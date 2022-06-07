@@ -5,7 +5,14 @@
             
             <div class="flex w-full flex-col overflow-auto">
                 <div class="mt-2">
-                    <h1 class="text-4xl pl-5 font-semibold">Lists</h1>
+                    <ion-row>
+      <ion-col size="5">
+        <a href="/club" class="rout-link">
+          <i class="fa-solid fa-lg fa-arrow-left-long"></i>
+        </a>
+      </ion-col>
+      <ion-col size="7" >All Sport</ion-col>
+    </ion-row>
                 </div>
     
                 <div class="flex w-full flex-row flex-wrap justify-around mt-2">
@@ -20,7 +27,7 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">All</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfAllTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfAllTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -29,14 +36,13 @@
                     <ion-card class="w-2/5">
                         <router-link :to="{name:'Work'}">
                             <ion-card-header>
-    
-                                <ion-icon :icon="briefcase" size="large" class="text-yellow-600"></ion-icon>
+                            <i class="fa-solid fa-basketball fa-2x" style="color:peru"></i>
     
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">Work</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfWorkTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-title class="text-2xl">Baskeball</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfWorkTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -44,14 +50,14 @@
                     <ion-card class="w-2/5">
                         <router-link :to="{name:'Music'}">
                             <ion-card-header>
-    
-                                <ion-icon :icon="headset" size="large" class="text-red-400"></ion-icon>
+                    <i class="fa-solid fa-dumbbell fa-2x" style="color: #1f2937;"></i>
     
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">Music</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfMusicTasks}} Tasks</ion-card-subtitle>
+
+                                <ion-card-title class="text-2xl">Gym</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfMusicTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -60,13 +66,12 @@
                         <router-link :to="{name:'Travel'}">
                             <ion-card-header>
     
-                                <ion-icon :icon="airplane" size="large" class="text-green-400"></ion-icon>
-    
+                                <i class="fa-solid fa-table-tennis-paddle-ball fa-2x" style="color: #f87171;"></i>
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">Travel</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfTravelTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-title class="text-2xl">Bang Bong</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfTravelTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -76,13 +81,12 @@
                         <router-link :to="{name:'Study'}">
                             <ion-card-header>
     
-                                <ion-icon :icon="book" size="large" class="text-indigo-400"></ion-icon>
-    
+                                <i class="fa-solid fa-person-swimming fa-2x" style="color: #4c8dff;"></i>
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">Study</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfStudyTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-title class="text-2xl">Swim</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfStudyTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -91,14 +95,13 @@
                     <ion-card class="w-2/5">
                         <router-link :to="{name:'House'}">
                             <ion-card-header>
-    
-                                <ion-icon :icon="home" size="large" style="color:#2DD4BF"></ion-icon>
+                            <i class="fa-solid fa-person-running fa-2x"  style="color:#2DD4BF"></i>
     
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">House</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfHouseTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-title class="text-2xl">Running</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfHouseTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -114,7 +117,7 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">Sport</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfSportTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfSportTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -123,14 +126,13 @@
                     <ion-card class="w-2/5">
                         <router-link :to="{name:'Shopping'}">
                             <ion-card-header>
-    
-                                <ion-icon :icon="cart" size="large" style="color:#115E59"></ion-icon>
+                         <i class="fa-solid fa-volleyball fa-2x" style="color:#115E59"></i>
     
                             </ion-card-header>
     
                             <ion-card-content>
-                                <ion-card-title class="text-2xl">Shopping</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfShoppingTasks}} Tasks</ion-card-subtitle>
+                                <ion-card-title class="text-2xl">Volleyball</ion-card-title>
+                                <ion-card-subtitle>{{state.lengthOfShoppingTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>

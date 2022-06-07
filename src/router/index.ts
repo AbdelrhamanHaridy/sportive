@@ -11,6 +11,7 @@ import ProfilePage from '../views/ProfilePage.vue';
 import DataPage from '../views/DataPage.vue';
 import SingleclubPage from '../views/club/singleclubPage.vue';
 import PaymentPage from '../views/paymentPage.vue';
+import ThanksPage from '../views/ThanksPage.vue';
 import House from '../views/booking/House.vue'
 import Lists from '../views/booking/Lists.vue';
 import All from '../views/booking/All.vue';
@@ -22,7 +23,10 @@ import Sport from '../views/booking/Sport.vue';
 import Shopping from '../views/booking/Shopping.vue'; 
 
 const routes: Array<RouteRecordRaw> = [
-  
+  {
+    path: '/',
+    component: () => import('@/views/Authentication.vue')
+  },
   {
     path: '/',
     redirect: '/welcome'
@@ -121,6 +125,15 @@ const routes: Array<RouteRecordRaw> = [
     path: '/payment',
     name: 'Payment',
     component:PaymentPage
+  },
+  {
+    path: '/',
+    redirect: '/thanks'
+  },
+  {
+    path: '/thanks',
+    name: 'thanks',
+    component:ThanksPage
   },
   {
     path: '/',

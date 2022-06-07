@@ -1,5 +1,5 @@
 <template>
-    <ion-app>
+<ion-app>
  <ion-content>
     <ion-grid>
       <ion-row>
@@ -21,66 +21,21 @@
               </ion-card>
          </ion-col>
     <ion-row>
-         <ion-col size="6"> 
+         <ion-col size="6"
+         v-for="posts in data" :key="posts.id"
+         > 
          <ion-card>
-          <img class="img-height" src="/assets/img/braden-collum-9HI8UJMSdZA-unsplash.jpg" />
+          <img class="img-height" :src="posts.url" />
           <ion-card-header>
-            <ion-card-title>Running </ion-card-title>
+            <ion-card-title>{{posts.id}} </ion-card-title>
+            <ion-card-title>{{posts.title}} </ion-card-title>
             <ion-card-subtitle>
-                <p>Wembley Stadium</p>
+                <p>{{posts.des}}</p>
                 </ion-card-subtitle>
-          </ion-card-header>
-   
-        </ion-card>
-         </ion-col>
-        <ion-col size="6"> 
-        <ion-card>
-          <img class="img-height" src="/assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg" />
-          <ion-card-header>
-            <ion-card-title>Madison, WI</ion-card-title>
-            <ion-card-subtitle><p>Old Trafford</p></ion-card-subtitle>
-          </ion-card-header>
-   
-        </ion-card>
-         </ion-col>
-               <ion-col size="6"> 
-        <ion-card>
-          <img class="img-height" src="/assets/img/gentrit-sylejmani-JjUyjE-oEbM-unsplash.jpg" />
-          <ion-card-header>
-            <ion-card-title>Madison, WI</ion-card-title>
-            <ion-card-subtitle><p>Santiago Bernabéu Stadium</p></ion-card-subtitle>
-          </ion-card-header>
-   
-        </ion-card>
-         </ion-col>
-        <ion-col size="6"> 
-        <ion-card>
-          <img class="img-height" src="/assets/img/miguel-teirlinck-VDkRsT649C0-unsplash.jpg" />
-          <ion-card-header>
-            <ion-card-title>Madison, WI</ion-card-title>
-            <ion-card-subtitle><p>Maracanã Stadium</p></ion-card-subtitle>
+                
+   <ion-button >See Club</ion-button>
           </ion-card-header>
 
-        </ion-card>
-         </ion-col>
-              <ion-col size="6"> 
-        <ion-card>
-          <img class="img-height" src="/assets/img/victor-freitas-hOuJYX2K5DA-unsplash.jpg" />
-          <ion-card-header>
-            <ion-card-title>Madison, WI</ion-card-title>
-            <ion-card-subtitle><p>Allianz Arena</p></ion-card-subtitle>
-          </ion-card-header>
-   
-        </ion-card>
-         </ion-col>
-              <ion-col size="6"> 
-        <ion-card>
-          <img class="img-height" src="/assets/img/wesley-tingey-dKCKiC0BQtU-unsplash.jpg" />
-          <ion-card-header>
-            <ion-card-title>Madison, WI</ion-card-title>
-            <ion-card-subtitle><p>San Siro Stadium</p></ion-card-subtitle>
-          </ion-card-header>
-   
         </ion-card>
          </ion-col>
       </ion-row>
@@ -95,9 +50,14 @@
 <script lang="ts">
 import { IonCol, IonGrid, IonRow } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import JsonPosts from "../../../public/assets/club_posts.json";
 export default defineComponent({
   components: { IonCol, IonGrid, IonRow  },
-
+data(){
+  return{
+    data:JsonPosts
+  }
+}
 });
 </script>
 <style scoped>
@@ -108,12 +68,18 @@ box-shadow:none
 border-radius: 15px;
 }
 ion-card-title{
-    font-size: 17px;
+    font-size: 12px;
+    padding: 0 0 10px;
 }
 p{
-    font-size: 12px;
+  font-size: 8px;
     color: #39bd86;
-    font-weight: 700;
+    width: 125px;
+    height: 105px;
+    overflow: hidden;
+    }
+ion-button{
+  font-size: 14px;
 }
 .img-height {
   height: 500px;
