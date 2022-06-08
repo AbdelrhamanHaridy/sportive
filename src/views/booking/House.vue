@@ -146,6 +146,7 @@ import {ellipsisVertical,house,trash,add} from 'ionicons/icons';
 import NewTask from '@/components/NewTask.vue';
 import {useStore} from 'vuex';
 export default defineComponent({
+    name:"House-book",
 
     components:{
        IonPage,IonToolbar,IonButtons,IonBackButton,IonIcon,IonContent,

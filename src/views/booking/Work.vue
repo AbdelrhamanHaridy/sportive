@@ -146,6 +146,7 @@ import { ellipsisVertical,briefcase,add,trash } from 'ionicons/icons';
 import {useStore} from 'vuex';
 import NewTask from '@/components/NewTask.vue';
 export default defineComponent({
+    name:"Work-book",
     components:{
       IonPage,IonToolbar,/*IonButtons*/
       IonIcon,

@@ -146,6 +146,7 @@ import { ellipsisVertical,book,add,trash } from 'ionicons/icons';
 import {useStore} from 'vuex';
 import NewTask from '@/components/NewTask.vue';
 export default defineComponent({
+    name:"Study-book",
     components:{
       IonPage,IonToolbar,/*IonButtons*/
       IonIcon,

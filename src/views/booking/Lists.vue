@@ -171,6 +171,7 @@ import { clipboard,briefcase,headset,airplane,book,house,football,cart,add } fro
 import NewTask from '@/components/NewTask.vue';
 import {useStore} from 'vuex';
 export default defineComponent({
+    name:"Lists-book",
 
     components:{
        IonPage,IonCard,IonCardHeader,IonIcon,IonCardContent,

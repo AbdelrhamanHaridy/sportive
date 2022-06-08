@@ -47,12 +47,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 import JsonPosts from "../../public/assets/club_posts.json";
 
 export default defineComponent({
   name: 'Tab2Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: {IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
   data(){
   return{
     data:JsonPosts
@@ -72,7 +71,7 @@ ion-card-title{
     padding: 0 0 10px;
 }
 p{
-  font-size: 8px;
+  font-size: 9px;
     color: #39bd86;
     width: 125px;
     height: 105px;

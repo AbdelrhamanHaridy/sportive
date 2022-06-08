@@ -85,7 +85,8 @@ enum AuthMode {
 }
 
 export default {
-  name: "Authenication",
+    name:"Authenication-page",
+
   components: {
     IonPage,
     IonHeader,

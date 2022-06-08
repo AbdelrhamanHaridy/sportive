@@ -17,7 +17,7 @@
       <div class="cates ion-margin-top">
         <div class="flex">
           <h3>Category</h3>
-          <a href="/lists">View All</a>
+          <a href="/category">View All</a>
         </div>
         <ion-row class="cates-row ion-margin-top">
           <ion-col size="3">
@@ -111,13 +111,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default defineComponent({
   name: 'Tab1Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
   setup() {
-    // Optional parameters to pass to the swiper instance. See https://swiperjs.com/swiper-api for valid options.
     const slideOpts = {
       initialSlide: 1,
       speed: 400

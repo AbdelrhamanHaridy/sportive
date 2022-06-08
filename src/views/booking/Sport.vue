@@ -146,6 +146,7 @@ import {ellipsisVertical,add,trash,football } from 'ionicons/icons';
 import NewTask from '@/components/NewTask.vue';
 import { useStore } from 'vuex';
 export default defineComponent({
+    name:"Sport-book",
     components:{
       IonPage,IonToolbar,/*IonButtons*/
       IonIcon,

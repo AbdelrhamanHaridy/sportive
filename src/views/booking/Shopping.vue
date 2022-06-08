@@ -146,7 +146,7 @@ import {ellipsisVertical,cart,trash,add} from 'ionicons/icons';
 import NewTask from '@/components/NewTask.vue';
 import {useStore} from 'vuex';
 export default defineComponent({
-
+    name:"Shopping-book",
     components:{
        IonPage,IonToolbar,IonButtons,IonBackButton,IonIcon,IonContent,
        IonCardTitle,IonCardSubtitle,IonListHeader,IonItemSliding,

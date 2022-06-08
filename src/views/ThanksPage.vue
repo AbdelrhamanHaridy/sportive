@@ -49,7 +49,7 @@ import { checkmarkCircle } from "ionicons/icons";
 import { useRouter } from "vue-router";
 
 export default defineComponent({
-  name: "Thanks",
+  name: "ThanksPage",
   setup() {
     const router = useRouter();
 

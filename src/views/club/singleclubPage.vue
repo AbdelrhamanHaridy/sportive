@@ -13,25 +13,21 @@
       <ion-card>
         <ion-slides :options="opation">
           <ion-slide>
-            <ion-img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Youth-soccer-indiana.jpg" alt=""></ion-img>
+            <ion-img src="assets/img/23472315_1932031633791181_4402121116895505393_n.jpg" alt=""></ion-img>
           </ion-slide>
           <ion-slide>
-            <ion-img src="https://mediacache3.select-sport.com/d2/c1/76d9-e855-4a47-830e-1e3968ca46a9/thumbnail-maxi_grip.jpg" alt=""></ion-img>
+            <ion-img src="assets/img/braden-collum-9HI8UJMSdZA-unsplash.jpg" alt=""></ion-img>
           </ion-slide>
           <ion-slide>
-            <ion-img src="https://cdn.dmcl.biz/media/image/233432/o/FIVB+volleyball.jpg" alt=""></ion-img>
-          </ion-slide>
-          <ion-slide>
-            <ion-img src="https://swimswam.com/wp-content/uploads/2020/08/Pool-Stock-By-Jack-Spitser-CD8I9550-scaled.jpg" alt=""></ion-img>
+            <ion-img src="assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg" alt=""></ion-img>
           </ion-slide>
         </ion-slides>
         <ion-card-header>
           <ion-card-title>Sporting club</ion-card-title>
-          <ion-card-subtitle>Youth</ion-card-subtitle>
+          <ion-card-subtitle>6th October Courts</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia saepe facilis laboriosam necessitatibus illo totam impedit accusantium suscipit vel. Suscipit, reiciendis quaerat. Ducimus
-        </ion-card-content>
+6th October courts are highly qualified and provided by the government        </ion-card-content>
       </ion-card>
     </div>
     <div class="sports">
@@ -96,6 +92,7 @@
 </template>
 
 <script lang="ts">
+
 import { defineComponent } from 'vue';
 export default defineComponent({
   // Optional parameters to pass to the swiper instance. See https://swiperjs.com/swiper-api for valid options.

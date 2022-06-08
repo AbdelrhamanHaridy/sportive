@@ -146,6 +146,7 @@ import {ellipsisVertical,headset,trash,add} from 'ionicons/icons';
 import NewTask from '@/components/NewTask.vue';
 import {useStore} from 'vuex'; 
 export default defineComponent({
+    name:"Music-book",
 
     components:{
        IonPage,IonToolbar,IonButtons,IonBackButton,IonIcon,IonContent,
