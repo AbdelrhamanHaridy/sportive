@@ -11,12 +11,12 @@
         <ion-content class="overflow-auto">
             <div class="flex flex-col justify-center items-center mt-2">
                 <div class="text-center">
-                    <ion-icon :icon="cart" size="large" style="color:#115E59"></ion-icon>
+                         <i class="fa-solid fa-volleyball fa-2x" style="color:#115E59"></i>
                 </div>
 
                 <div class="text-center">
-                    <ion-card-title class="text-2xl">Shopping</ion-card-title>
-                    <ion-card-subtitle>{{state.tasksShopping.length}} Tasks</ion-card-subtitle>
+                    <ion-card-title class="text-2xl">Volleyball</ion-card-title>
+                    <ion-card-subtitle>{{state.tasksShopping.length}} Appointment</ion-card-subtitle>
                 </div>
             </div>
 

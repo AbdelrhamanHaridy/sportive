@@ -3,7 +3,9 @@
   <ion-grid>
     <ion-row>
       <ion-col size="5">
+                <a href="/tabs/tab1" class="rout-link">
         <i class="fa-solid fa-arrow-left-long"></i>
+        </a>
       </ion-col>
       <ion-col size="6"> Payment </ion-col>
     </ion-row>
@@ -103,18 +105,11 @@
             <ion-input type="number" placeholder="CCV"></ion-input>
             <img src="https://www.mastercard.com.eg/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" alt="">
           </ion-item>
-          <ion-button shape="round" expand="block">Confirm</ion-button>
+          <ion-button href="/thanks" shape="round" expand="block">Payment</ion-button>
+          
         </form>
       </div>
-      <div class="checkout-paypal ion-margin-top">
-        <ion-text>
-          <h3>Or checkout by paypal</h3>
-        </ion-text>
-        <ion-text>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Odit,</p>
-        </ion-text>
-        <ion-button shape="round"><a href="#">Paypal</a></ion-button>
-      </div>
+
     </div>
   </div>
 </ion-content>

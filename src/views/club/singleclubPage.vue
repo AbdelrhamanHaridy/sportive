@@ -3,7 +3,7 @@
   <ion-content class="ion-margin-top">
     <ion-row>
       <ion-col size="5">
-        <a href="/club" class="rout-link">
+        <a href="/tabs/tab2" class="rout-link">
           <i class="fa-solid fa-lg fa-arrow-left-long"></i>
         </a>
       </ion-col>
@@ -89,8 +89,8 @@
       </ion-list>
       </ion-accordion>
     </ion-accordion-group>
-    <ion-button class="sign" shape="block">
-      <a href="#">Sign In This Club</a>
+    <ion-button  href="/lists" class="sign" shape="block">
+     Booking
     </ion-button>
   </ion-content>
 </template>

@@ -1,0 +1,134 @@
+[
+    {
+      "id": "1",
+      "title": "Santiago Bernabeu",
+      "des": "The Santiago Bernabéu Stadium is a football stadium in Madrid, Spain. It is the second largest stadium in Spain after the Camp Nou. It has a capacity for 81,044 people. The stadium is called Estadio Santiago Bernabéu in Spanish.",
+      "url": "https://24.ae/images/Articles2/202237155138592VH.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/cc/bb/22/bernabeu-stadium-estadio.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/2a/b5/9b/i-palloni-d-oro-dei-giocatori.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/39/39/0b/bernabeu-stadium-estadio.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Camp Nou",
+      "des": "Camp Nou is a football stadium in Barcelona Spain. It opened in 1957 and has been the home stadium of FC Barcelona since its completion, With a seating capacity of 99,354 it is the largest stadium in Spain and Europe and the fourth largest association football stadium in the world in capacity.",
+      "url": "https://www.albayan.ae/polopoly_fs/1.3830865.1586881063!/image/image.jpeg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/84/0a/36/caption.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/84/0a/33/caption.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/84/0a/32/caption.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "3",
+      "title": "EMIRATES STADIUM",
+      "des": "The Emirates Stadium is a football stadium in Holloway, London, England, and the home of Arsenal. With a capacity of 60,260 it is the fourth-largest football stadium in England after Wembley Stadium, Old Trafford and Tottenham Hotspur Stadium.",
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/db/b7/f3/travelled-down-from-scotland.jpg?w=1200&h=-1&s=1",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d7/54/1a/20160820-131642-largejpg.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/d6/c9/49/17.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/b8/a9/a4/photo3jpg.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Tottenham Hotspur Stadium",
+      "des": "Tottenham Hotspur Stadium is the home of Premier League club Tottenham Hotspur in north London, replacing the club's previous ground, White Hart Lane. With a seating capacity of 62,850, it is the third-largest football stadium in England and the largest club ground in London.",
+      "url": "https://media.timeout.com/images/105685403/image.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/be/6e/77/keeping-harry-s-chair.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/e3/75/ed/dolphins-at-jaguars.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/d4/9c/64/organisation-space-etc.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Stamford Bridge Stadium",
+      "des": "Stamford Bridge is a football stadium in Fulham, adjacent to the borough of Chelsea in West London. It is the home of Premier League club Chelsea. With a capacity of 40,834, it is the ninth largest venue of the 2021-22 Premier League season.",
+      "url": "https://customercarecontacts.com/wp-content/uploads/2021/05/stamford-bridge-1024x601.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ed/ef/b4/chelsea-football-match.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ed/ef/7b/chelsea-football-match.jpg?w=1100&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a6/7a/77/stamford-bridge-stadium.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Wanda Metropolitano Stadium",
+      "des": "Metropolitano Stadium, also referred to as Wanda Metropolitano for sponsorship reasons, is a stadium in Madrid, Spain. It has been the home stadium of Atlético Madrid since the 2017-18 season. It is located in the Rosas neighbourhood, in the San Blas-Canillejas district.",
+      "url": "https://taiyo-europe.com/wp-content/uploads/2020/04/WANDA-METROPOLITANO-STADIUM-1000x675.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/5f/c5/23/wanda-metropolitano.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/0f/eb/b2/entrada-principal-del.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/1f/7e/51/caption.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Old Trafford Stadium",
+      "des": "Old Trafford is a football stadium in Old Trafford, Greater Manchester, England, and the home of Manchester United. With a capacity of 74,140 seats, it is the largest club football stadium (and second-largest football stadium overall after Wembley Stadium) in the United Kingdom, and the eleventh-largest in Europe.[2] It is about 0.5 miles (800 m) from Old Trafford Cricket Ground and the adjacent tram stop.",
+      "url": "https://i.pinimg.com/originals/a2/37/8c/a2378c522ea57603ad5bb70cce7853d8.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/4b/50/5d/the-united-trinity-statue.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/8f/6a/97/parking-for-vips.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/91/d4/ae/old-traffords-museum.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Juventus Stadium",
+      "des": "Juventus Stadium, known for sponsorship reasons as the Allianz Stadium since July 2017, sometimes simply known in Italy as the Stadium (Italian: Lo Stadium), is an all-seater football stadium in the Vallette borough of Turin, Italy, and the home of Juventus F.C. The stadium was built on the site of its former ground, the Stadio delle Alpi in the latter 2000s, and is the first club-owned football modern venue in the country as well as one of only four stadiums accredited with the UEFA Category which have the highest technical level in the confederation's Stadium Infrastructure Regulations",
+      "url": "https://icdn.juvefc.com/wp-content/uploads/2016/12/juventus-stadium-940x585.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/ed/5a/64/img-20170408-120755-largejpg.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/9a/48/img-20170330-155032-largejpg.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d9/9a/43/img-20170330-152415-largejpg.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "9",
+      "title": "San Siro Stadium",
+      "des": "Stadio Giuseppe Meazza, commonly known as San Siro, is a football stadium in the San Siro district of Milan, Italy, which is the home of Inter Milan and A.C. Milan. It has a seating capacity of 80,018, making it one of the largest stadiums in Europe, and the largest in Italy.",
+      "url": "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/80/2d.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0e/c7/97/photo0jpg.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/08/02/c8/photo0jpg.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/fc/f4/a7/photo8jpg.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Stadio Olimpico",
+      "des": "The Stadio Olimpico is the largest sports facility in Rome, Italy, seating over 70,000 spectators. It is located within the Foro Italico sports complex, north of the city. The structure is owned by the Italian National Olympic Committee and it is used primarily for association football. The Stadio Olimpico is the home stadium of the Roma and Lazio football clubs, and also hosts the Coppa Italia final. It was rebuilt for the 1990 FIFA World Cup and it hosted the tournament final.",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Berliner_Olympiastadion_night.jpg/1280px-Berliner_Olympiastadion_night.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/50/09/78/le-giornate-vissute-in.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/50/09/76/le-giornate-vissute-in.jpg?w=1100&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/30/90/56/la-bellezza-dello-stadio.jpg?w=600&h=-1&s=1"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Allianz Arena",
+      "des": "Allianz Arena is a football stadium in Munich, Bavaria, Germany with a 70,000 seating capacity for international matches and 75,000 for domestic matches. Widely known for its exterior of inflated ETFE plastic panels, it is the first stadium in the world with a full colour changing exterior. Located at 25 Werner-Heisenberg-Allee at the northern edge of Munich's Schwabing-Freimann borough on the Fröttmaning Heath, it is the second-largest arena in Germany behind Westfalenstadion in Dortmund.",
+      "url": "https://img.fcbayern.com/image/upload/t_cms-2x1/f_auto/w_1600,c_fill/q_auto/cms/public/images/fcbayern-com/media/images/homepage/stadien/allianz-arena/arena_ima_111205.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/a1/51/da/20190518-180445-largejpg.jpg?w=800&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/bd/98/ba/photo2jpg.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/92/ba/53/photo6jpg.jpg?w=1200&h=-1&s=1"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Signal Iduna Park Stadium",
+      "des": "Westfalenstadion, officially known since November 2005 as Signal Iduna Park, is an association football stadium in Dortmund, Germany. With 80,708 spectator places, it is the largest football stadium in Germany, and is classified by UEFA as an elite stadium, allowing it to host the finals of major club competitions. It is home to the German Bundesliga Team Borussia Dortmund, whose spectator set up a new European record there to million spectators (average approx. 76,500 per play) in the season 2003/2004",
+      "url": "https://i.pinimg.com/originals/af/95/ec/af95ecae551fe623648d8d9d0fa8c106.jpg",
+      "slide": {
+        "img1": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/8e/dd/6c/signal-iduna-park.jpg?w=1200&h=-1&s=1",
+        "img2": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/42/bb/c7/the-serious-stuff-goes.jpg?w=1200&h=-1&s=1",
+        "img3": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/0a/c5/7c/signal-iduna-park.jpg?w=800&h=-1&s=1"
+      }
+    }
+  ]

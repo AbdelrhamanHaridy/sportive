@@ -51,13 +51,13 @@
 
                    <Field v-model="category" :rules="isRequired" v-slot="{field}" name="categoryField" >
                        <ion-select v-bind="field" placeholder="Select One">
-                            <ion-select-option value="Work">Work</ion-select-option>
-                            <ion-select-option value="Music">Music</ion-select-option>
-                            <ion-select-option value="Travel">Travel</ion-select-option>
-                            <ion-select-option value="Study">Study</ion-select-option>
-                            <ion-select-option value="Home">Home</ion-select-option>
-                            <ion-select-option value="Shopping">Shopping</ion-select-option>
-                            <ion-select-option value="Sport">Sport</ion-select-option>
+                            <ion-select-option value="Work">Baskeball</ion-select-option>
+                            <ion-select-option value="Music">Gym</ion-select-option>
+                            <ion-select-option value="Travel">Bang Bong</ion-select-option>
+                            <ion-select-option value="Study">Swimming</ion-select-option>
+                            <ion-select-option value="Home">Running</ion-select-option>
+                            <ion-select-option value="Shopping">Volleyball</ion-select-option>
+                            <ion-select-option value="Sport">Football</ion-select-option>
                        </ion-select>
                    </Field>
                </ion-item>
