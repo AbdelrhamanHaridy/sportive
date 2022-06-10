@@ -28,7 +28,7 @@ import Shopping from '../views/booking/Shopping.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('@/views/WelcomePage.vue')
+    component: () => import('@/views/Authentication.vue')
   },
   {
     path: '/',

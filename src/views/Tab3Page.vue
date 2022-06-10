@@ -15,17 +15,17 @@
       </ion-button>
       </div>
       <div class="mx-auto">
-        <ion-avatar>
-          <ion-img src="https://i.ytimg.com/vi/majzo1hpiOc/hqdefault.jpg"></ion-img>
+        <ion-avatar class="ion-margin-bottom">
+          <ion-img src="https://www.shareicon.net/data/512x512/2016/06/30/788946_people_512x512.png"></ion-img>
         </ion-avatar>
-        <h4 class="ion-margin-bottom">Deborah Moore</h4>
+        <h4 class="ion-margin-bottom">Player One</h4>
       </div>
       <ion-row class="row">
         <ion-col size="4">
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-scale-balanced"></i>
-              <p>55 Kg</p>
+              <p>74 Kg</p>
             </div>
           </ion-card>
         </ion-col>
@@ -33,7 +33,7 @@
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-person"></i>
-              <p>167 cm</p>
+              <p>179 cm</p>
             </div>
           </ion-card>
         </ion-col>
@@ -41,7 +41,7 @@
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-cake-candles"></i>
-              <p>26 years</p>
+              <p>23 years</p>
             </div>
           </ion-card>
         </ion-col>
@@ -55,7 +55,9 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
+                <p>
+                  PlayerOne001@gmail.com
+                </p>
               </ion-item>
             </ion-list>
           </ion-accordion>
@@ -65,7 +67,9 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
+                <p>
+                  Football
+                </p>
               </ion-item>
             </ion-list>
           </ion-accordion>
@@ -75,7 +79,9 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
+                <p>
+                  Gym
+                </p>
               </ion-item>
             </ion-list>
           </ion-accordion>
