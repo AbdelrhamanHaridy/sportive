@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
+import { auth } from '@/firebase';
+
 import TabsPage from "../views/TabsPage.vue"
 import WelcomePage from '../views/WelcomePage.vue';
 import HomePage from '../views/HomePage.vue';
@@ -26,7 +28,7 @@ import Shopping from '../views/booking/Shopping.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('@/views/Authentication.vue')
+    component: () => import('@/views/WelcomePage.vue')
   },
   {
     path: '/',

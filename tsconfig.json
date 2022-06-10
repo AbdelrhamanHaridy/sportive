@@ -4,6 +4,7 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",   
+      "useUnknownInCatchVariables": false,
      "resolveJsonModule": true,
 
     "importHelpers": true,

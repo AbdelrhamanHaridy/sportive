@@ -1,14 +1,19 @@
 <template>
-  <ion-page>
+  <ion-page style=" text-align: center">
     <ion-header>
       <ion-toolbar>
         <ion-title>Sign In/Up</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-card>
+
         <ion-card-header>
-          <ion-card-title> Welcome to Photo Share </ion-card-title>
+          <ion-card-title> Welcome to Sportive </ion-card-title>
+          <div class="parent-flex">
+         <div class="mx-auto logo-div">
+           <img src="/assets/img/logo.png">
+         </div>
+       </div>
           <ion-card-subtitle> Sign In/Up </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
@@ -52,7 +57,6 @@
         <ion-card-content v-if="errorMsg" class="error-message">
             {{errorMsg}}
         </ion-card-content>
-      </ion-card>
     </ion-content>
   </ion-page>
 </template>
@@ -64,7 +68,6 @@ import {
   IonToolbar,
   IonTitle,
   IonContent,
-  IonCard,
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
@@ -75,7 +78,7 @@ import {
   IonItem,
 } from "@ionic/vue";
 
-// import { auth, db } from "../main";
+import { auth, db } from "@/firebase";
 import { reactive, toRefs } from "vue";
 import { useRouter } from "vue-router";
 
@@ -85,15 +88,13 @@ enum AuthMode {
 }
 
 export default {
-    name:"Authenication-page",
-
+  name: "AuthenicationPage",
   components: {
     IonPage,
     IonHeader,
     IonToolbar,
     IonTitle,
     IonContent,
-    IonCard,
     IonCardSubtitle,
     IonCardTitle,
     IonCardContent,
@@ -123,10 +124,10 @@ export default {
           return;
         }
 
-        // await auth.signInWithEmailAndPassword(email, password);
+        await auth.signInWithEmailAndPassword(email, password);
         router.push("/tabs/tab1");
       } catch (error) {
-        // state.errorMsg = error.message;
+        state.errorMsg = error.message;
       }
     };
 
@@ -141,19 +142,19 @@ export default {
           return;
         }
 
-        // const authRes = await auth.createUserWithEmailAndPassword(
-        //   email,
-        //   password
-        // );
+        const authRes = await auth.createUserWithEmailAndPassword(
+          email,
+          password
+        );
 
-        // db.collection("users").doc(authRes.user?.uid).set({
-        //   name,
-        //   email,
-        // });
+        db.collection("users").doc(authRes.user?.uid).set({
+          name,
+          email,
+        });
 
         router.push("/tabs/tab1");
       } catch (error) {
-        // state.errorMsg = error.message;
+        state.errorMsg = error.message;
       }
     };
 
@@ -168,17 +169,86 @@ export default {
 </script>
 
 <style>
-.center {
-  display: flex;
-  height: 90vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.error-message {
-  color: #842029;
-  background-color: #f8d7da;
-  border-color: #f5c2c7;
-  text-align: center;
-}
+.mx-auto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  h3 {
+    color: #0A0615;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .input {
+    width: 99%;
+    border-radius: 40px;
+    text-indent: 20px;
+    background: #F1F4F8;
+    font-size: 1.25em;
+    min-height: 50px;
+    color: #5E686E;
+  }
+ 
+    ion-button {
+    min-height: 40px;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  ion-button a {
+    color: #fff;
+  }
+  img {
+    width: 130px;
+  }
+
+  .another-way h4 {
+    font-size: 2em;
+    color: #0a0615;
+  }
+  .buttons ion-button {
+    height: 60px;
+    margin-top: 56px;
+  }
+  a{
+    color: #39bd86;
+    text-decoration: none;
+  }
+  .buttons .fa-google {
+    color: #ff4901 !important;
+    padding: 5px;
+  }
+   .buttons .fa-facebook {
+    color: #1877f2 !important;
+    padding: 5px;
+
+  }
+  .item-accept {
+    margin-block: 10px;
+  }
+  @media (max-height: 700px) {
+    .another-way {
+      margin-top: 0px;
+    }
+    .mx-auto img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .logo-div {
+    background: #899c89;
+    display: inline-flex;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .parent-flex {
+    display: flex;
+    justify-content: center;
+  }
 </style>

@@ -27,6 +27,7 @@ import './theme/variables.css';
 import '../public/assets/css/style.css';
 
 import store from './store/index';
+import { auth } from './firebase';
 
 const app = createApp(App)
   .use(IonicVue)
