@@ -15,17 +15,17 @@
       </ion-button>
       </div>
       <div class="mx-auto">
-        <ion-avatar class="ion-margin-bottom">
-          <ion-img src="https://www.shareicon.net/data/512x512/2016/06/30/788946_people_512x512.png"></ion-img>
+        <ion-avatar>
+          <ion-img src="/assets/img/male.png"></ion-img>
         </ion-avatar>
-        <h4 class="ion-margin-bottom">Player One</h4>
+        <h4 class="ion-margin-bottom">Player</h4>
       </div>
       <ion-row class="row">
         <ion-col size="4">
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-scale-balanced"></i>
-              <p>74 Kg</p>
+              <p>55 Kg</p>
             </div>
           </ion-card>
         </ion-col>
@@ -33,7 +33,7 @@
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-person"></i>
-              <p>179 cm</p>
+              <p>167 cm</p>
             </div>
           </ion-card>
         </ion-col>
@@ -41,7 +41,7 @@
           <ion-card class="feat-card">
             <div class="content">
               <i class="fa-solid fa-2x fa-cake-candles"></i>
-              <p>23 years</p>
+              <p>26 years</p>
             </div>
           </ion-card>
         </ion-col>
@@ -55,9 +55,7 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>
-                  PlayerOne001@gmail.com
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
               </ion-item>
             </ion-list>
           </ion-accordion>
@@ -67,9 +65,7 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>
-                  Football
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
               </ion-item>
             </ion-list>
           </ion-accordion>
@@ -79,14 +75,12 @@
             </ion-item>
             <ion-list slot="content">
               <ion-item>
-                <p>
-                  Gym
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut, aut voluptates commodi dolorem esse architecto? Numquam, nesciunt, vitae eum aut porro perspiciatis assumenda quia excepturi nemo, atque natus non.</p>
               </ion-item>
             </ion-list>
           </ion-accordion>
           <ion-accordion toggle-icon="none">
-              <ion-item href="#" slot="header">
+              <ion-item href="/welcome" slot="header">
                 <ion-label>Log out</ion-label>
               </ion-item>
           </ion-accordion>

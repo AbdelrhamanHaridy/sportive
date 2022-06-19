@@ -2,6 +2,8 @@
 
   <ion-grid>
     <ion-row>
+
+    
       <ion-col size="5">
         <i class="fa-solid fa-arrow-left-long"></i>
       </ion-col>
@@ -17,6 +19,7 @@
 
     <ion-item>
       <ion-label>Gender</ion-label>
+      <div class="">lo</div>
       <ion-select placeholder="Select One">
         <ion-select-option value="f">Female</ion-select-option>
         <ion-select-option value="m">Male</ion-select-option>

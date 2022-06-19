@@ -3,7 +3,9 @@
     <ion-grid>
       <ion-row>
         <ion-col size="5">
+          <a href="/tabs/tab1" class="rout-link">
           <i class="fa-solid fa-arrow-left-long"></i>
+          </a>
         </ion-col>
         <ion-col size="6"> Category </ion-col>
       </ion-row>

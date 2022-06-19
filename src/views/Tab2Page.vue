@@ -6,40 +6,40 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-        <ion-grid>
-      <ion-row>
+      <ion-grid>
+        <ion-row>
 
 
-        <ion-searchbar></ion-searchbar>
+          <ion-searchbar></ion-searchbar>
 
-      </ion-row>
+        </ion-row>
 
-          <ion-col  size="12"> 
-              <ion-card  class="ion-card">
-          <img class="img" src="/assets/img/ken-russo-IrWOJ1F5Tv4-unsplash.jpg" />
-              </ion-card>
-         </ion-col>
-    <ion-row>
-         <ion-col size="6"
-         v-for="posts in data" :key="posts.id"
-         > 
-         <ion-card>
-          <img class="img-height" :src="posts.url" />
-          <ion-card-header>
-            <ion-card-title>{{posts.id}} </ion-card-title>
-            <ion-card-title>{{posts.title}} </ion-card-title>
-            <ion-card-subtitle>
-                <p>{{posts.des}}</p>
+        <ion-col size="12">
+          <ion-card class="ion-card">
+            <img class="img" src="/assets/img/ken-russo-IrWOJ1F5Tv4-unsplash.jpg" />
+          </ion-card>
+        </ion-col>
+        <ion-row>
+          <ion-col size="6" v-for="posts in data" :key="posts.id">
+            <ion-card>
+              <img class="img-height" :src="posts.url" />
+              <ion-card-header>
+                <ion-card-title>{{ posts.id }} </ion-card-title>
+                <ion-card-title>{{ posts.title }} </ion-card-title>
+                <ion-card-subtitle>
+                  <p>{{ posts.des }}</p>
                 </ion-card-subtitle>
-                
-  <ion-button href="/single-club">See Club</ion-button>
-          </ion-card-header>
 
-        </ion-card>
-         </ion-col>
-      </ion-row>
-      
-    </ion-grid>
+                <ion-button>
+                  <router-link to="/single-club">See Club</router-link>
+                </ion-button>
+              </ion-card-header>
+
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
@@ -51,59 +51,70 @@ import JsonPosts from "../../public/assets/club_posts.json";
 
 export default defineComponent({
   name: 'Tab2Page',
-  components: {IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
-  data(){
-  return{
-    data:JsonPosts
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  data() {
+    return {
+      data: JsonPosts
+    }
   }
-}
 });
 </script>
 <style scoped>
-.ion-card{
-box-shadow:none
+.ion-card {
+  box-shadow: none
 }
-.img{
-border-radius: 15px;
+
+.img {
+  border-radius: 15px;
+  width:100% !important;
 }
-ion-card-title{
-    font-size: 12px;
-    padding: 0 0 10px;
+
+ion-card-title {
+  font-size: 12px;
+  padding: 0 0 10px;
 }
-p{
+
+p {
   font-size: 9px;
-    color: #39bd86;
-    width: 125px;
-    height: 105px;
-    overflow: hidden;
-    }
-ion-button{
+  color: #39bd86;
+  width: 125px;
+  height: 105px;
+  overflow: hidden;
+}
+
+ion-button {
   font-size: 14px;
 }
+
 .img-height {
   height: 500px;
   width: 100%;
 }
+
 @media (max-width:1200px) {
   .img-height {
     height: 400px;
   }
 }
+
 @media (max-width:900px) {
   .img-height {
     height: 300px;
   }
 }
+
 @media (max-width:720px) {
   .img-height {
     height: 180px;
   }
 }
+
 @media (max-width:600px) {
   .img-height {
     height: 140px;
   }
 }
+
 ion-searchbar {
   margin: 0 auto;
   --background: #eee;
@@ -111,6 +122,7 @@ ion-searchbar {
   --box-shadow: none;
   --border-radius: 20px;
 }
+
 .rout-link {
   color: #232323;
 }

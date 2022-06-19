@@ -3,6 +3,7 @@ import { RouteRecordRaw } from 'vue-router';
 import { auth } from '@/firebase';
 
 import TabsPage from "../views/TabsPage.vue"
+import AuthPage from "../views/Authentication.vue"
 import WelcomePage from '../views/WelcomePage.vue';
 import HomePage from '../views/HomePage.vue';
 import CategoryPage from '../views/CategoryPage.vue';
@@ -24,11 +25,12 @@ import Travel from '../views/booking/Travel.vue';
 import Study from '../views/booking/Study.vue';
 import Sport from '../views/booking/Sport.vue';
 import Shopping from '../views/booking/Shopping.vue'; 
+import ClubDetail from "../views/club/ClubDetail.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('@/views/Authentication.vue')
+    component: () => import('../views/WelcomePage.vue')
   },
   {
     path: '/',
@@ -56,8 +58,20 @@ const routes: Array<RouteRecordRaw> = [
       }
     ]
   },
-  
-  
+  {
+    path: '/club/:id',
+    name: 'ClubDetail',
+    component: ClubDetail
+  },
+  {
+    path: '/',
+    redirect: '/authentication'
+  },
+  {
+    path: '/authentication',
+    name: 'authentication',
+    component: AuthPage
+  },
   {
     path: '/',
     redirect: '/welcome'
@@ -147,7 +161,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/single-club',
     name: 'SingleClub',
     component:SingleclubPage
-  },
+  },       
     {
     path: '/',
     redirect: '/payment'

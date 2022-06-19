@@ -33,7 +33,10 @@
                 <p>{{posts.des}}</p>
                 </ion-card-subtitle>
                 
-            <ion-button href="/single-club">See Club</ion-button>
+            <ion-button >
+              <router-link to="/club/123">See Club</router-link>
+              </ion-button>
+
           </ion-card-header>
 
         </ion-card>

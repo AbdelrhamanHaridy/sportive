@@ -23,10 +23,10 @@
       </ion-text>
 
       <ion-button color="primary" expand="full" shape="round"
-        ><a href="/login">Get Started</a></ion-button
+        ><a href="/authentication">Get Started</a></ion-button
       >
 
-      <p>Alleady have account <a href="/signup">Singup </a></p>
+      <p>Alleady have account <a href="/authentication">Singup </a></p>
     </div>
   </div>
 </ion-content>
@@ -67,6 +67,7 @@ ion-button a{
   padding: 75px;
   border-radius: 50px 50px 0 0;
   text-align: center;
+  height: 400px;
 }
 .Started h2 {
   font-weight: 800;
@@ -76,7 +77,7 @@ ion-button a{
   font-size: 12px;
 }
 .logo-div {
-    background: #1877f2;
+    background: #899c89;
     display: inline-flex;
     padding: 10px;
     border-radius: 10px;

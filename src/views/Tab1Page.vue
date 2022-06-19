@@ -8,7 +8,7 @@
     <ion-content :fullscreen="true">
 
       <div class="flex ion-margin-top">
-        <h2>Hi, Deborah</h2>
+        <h2>Hi, Player</h2>
         <ion-button color="none">
           <i class="fa-regular fa-xl fa-bell"></i>
           <ion-badge color="primary">9</ion-badge>
@@ -59,7 +59,7 @@
           <ion-col size="10" size-md="12">
             <h4>Full Body Toning Workout</h4>
             <p>Includes circuits to work every muscels</p>
-            <ion-button href="/club">Start Training</ion-button>
+            <ion-button href="/list">Start Training</ion-button>
           </ion-col>
         </ion-row>
       </div>

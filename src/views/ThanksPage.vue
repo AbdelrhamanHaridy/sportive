@@ -22,9 +22,9 @@
               shape="round"
               color="primary"
               expand="block"
-              @click="onHomeButtonTouched"
             >
-              Go home
+            <a href="/tabs/tab1"> Go home</a>
+             
             </ion-button>
           </div>
         </div>
