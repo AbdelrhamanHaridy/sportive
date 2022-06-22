@@ -48,7 +48,7 @@
                         </router-link>
                     </ion-card>
                     <ion-card class="w-2/5">
-                        <router-link :to="{name:'Music'}">
+                        <router-link :to="{name:'Gym'}">
                             <ion-card-header>
                     <i class="fa-solid fa-dumbbell fa-2x" style="color: #1f2937;"></i>
     
@@ -57,13 +57,13 @@
                             <ion-card-content>
 
                                 <ion-card-title class="text-2xl">Gym</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfMusicTasks}} Appointment</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfGymTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
                     </ion-card>
                     <ion-card class="w-2/5">
-                        <router-link :to="{name:'Travel'}">
+                        <router-link :to="{name:'Bang'}">
                             <ion-card-header>
     
                                 <i class="fa-solid fa-table-tennis-paddle-ball fa-2x" style="color: #f87171;"></i>
@@ -71,14 +71,14 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">Bang Bong</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfTravelTasks}} Appointment</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfBangTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
                     </ion-card>
     
                     <ion-card class="w-2/5">
-                        <router-link :to="{name:'Study'}">
+                        <router-link :to="{name:'Swim'}">
                             <ion-card-header>
     
                                 <i class="fa-solid fa-person-swimming fa-2x" style="color: #4c8dff;"></i>
@@ -86,14 +86,14 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">Swim</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfStudyTasks}} Appointment</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfSwimTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
                     </ion-card>
     
                     <ion-card class="w-2/5">
-                        <router-link :to="{name:'House'}">
+                        <router-link :to="{name:'Running'}">
                             <ion-card-header>
                             <i class="fa-solid fa-person-running fa-2x"  style="color:#2DD4BF"></i>
     
@@ -101,7 +101,7 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">Running</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfHouseTasks}} Appointment</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfRunningTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -124,7 +124,7 @@
                     </ion-card>
     
                     <ion-card class="w-2/5">
-                        <router-link :to="{name:'Shopping'}">
+                        <router-link :to="{name:'Volleyball'}">
                             <ion-card-header>
                          <i class="fa-solid fa-volleyball fa-2x" style="color:#115E59"></i>
     
@@ -132,7 +132,7 @@
     
                             <ion-card-content>
                                 <ion-card-title class="text-2xl">Volleyball</ion-card-title>
-                                <ion-card-subtitle>{{state.lengthOfShoppingTasks}} Appointment</ion-card-subtitle>
+                                <ion-card-subtitle>{{state.lengthOfVolleyballTasks}} Appointment</ion-card-subtitle>
                             </ion-card-content>
     
                         </router-link>
@@ -167,7 +167,7 @@
 import {computed, defineComponent ,onMounted,ref,reactive} from 'vue';
 import { IonPage,IonCard,IonCardHeader,IonIcon,IonCardContent,IonCardTitle,
 IonCardSubtitle,IonFab,IonFabButton,IonModal} from '@ionic/vue';
-import { clipboard,briefcase,headset,airplane,book,house,football,cart,add } from 'ionicons/icons'; 
+import { clipboard,briefcase,headset,airplane,book,Running,football,cart,add } from 'ionicons/icons'; 
 import NewTask from '@/components/NewTask.vue';
 import {useStore} from 'vuex';
 export default defineComponent({
@@ -190,23 +190,23 @@ export default defineComponent({
             lengthOfWorkTasks: computed(() => {
                 return store.getters.lengthTasksByCategory('Work');
             }),
-            lengthOfMusicTasks: computed(() => {
-                return store.getters.lengthTasksByCategory('Music');
+            lengthOfGymTasks: computed(() => {
+                return store.getters.lengthTasksByCategory('Gym');
             }),
-            lengthOfTravelTasks: computed(() => {
-                return store.getters.lengthTasksByCategory('Travel');
+            lengthOfBangTasks: computed(() => {
+                return store.getters.lengthTasksByCategory('Bang');
             }),
-            lengthOfStudyTasks: computed(() => {
-                return store.getters.lengthTasksByCategory('Study');
+            lengthOfSwimTasks: computed(() => {
+                return store.getters.lengthTasksByCategory('Swim');
             }),
-            lengthOfHouseTasks: computed(() => {
-                return store.getters.lengthTasksByCategory('House');
+            lengthOfRunningTasks: computed(() => {
+                return store.getters.lengthTasksByCategory('Running');
             }),
             lengthOfSportTasks: computed(() => {
                 return store.getters.lengthTasksByCategory('Sport');
             }),
-            lengthOfShoppingTasks: computed(() => {
-                return store.getters.lengthTasksByCategory('Shopping');
+            lengthOfVolleyballTasks: computed(() => {
+                return store.getters.lengthTasksByCategory('Volleyball');
             }),
 
 
@@ -223,7 +223,7 @@ export default defineComponent({
         })
         return{
             isOpenNewTask,store,state,getTasks,
-            clipboard,briefcase,headset,airplane,book,house,football,cart,add
+            clipboard,briefcase,headset,airplane,book,Running,football,cart,add
         }
     }
 

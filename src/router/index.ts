@@ -16,15 +16,15 @@ import DataPage from '../views/DataPage.vue';
 import SingleclubPage from '../views/club/singleclubPage.vue';
 import PaymentPage from '../views/paymentPage.vue';
 import ThanksPage from '../views/ThanksPage.vue';
-import House from '../views/booking/House.vue'
+import Running from '../views/booking/Running.vue'
 import Lists from '../views/booking/Lists.vue';
 import All from '../views/booking/All.vue';
 import Work from '../views/booking/Work.vue';
-import Music from '../views/booking/Music.vue';
-import Travel from '../views/booking/Travel.vue';
-import Study from '../views/booking/Study.vue';
+import Gym from '../views/booking/Gym.vue';
+import Bang from '../views/booking/Bang.vue';
+import Swim from '../views/booking/Swim.vue';
 import Sport from '../views/booking/Sport.vue';
-import Shopping from '../views/booking/Shopping.vue'; 
+import Volleyball from '../views/booking/Volleyball.vue'; 
 import ClubDetail from "../views/club/ClubDetail.vue"
 
 const routes: Array<RouteRecordRaw> = [
@@ -190,9 +190,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Lists
   },
   {
-    path: '/House',
-    name: 'House',
-    component: House
+    path: '/Running',
+    name: 'Running',
+    component: Running
   },
   {
     path: '/All',
@@ -205,19 +205,19 @@ const routes: Array<RouteRecordRaw> = [
     component: Work
   },
   {
-    path: '/Music',
-    name: 'Music',
-    component: Music
+    path: '/Gym',
+    name: 'Gym',
+    component: Gym
   },
   {
-    path: '/Travel',
-    name: 'Travel',
-    component: Travel
+    path: '/Bang',
+    name: 'Bang',
+    component: Bang
   },
   {
-    path: '/Study',
-    name: 'Study',
-    component: Study
+    path: '/Swim',
+    name: 'Swim',
+    component: Swim
   },
   {
     path: '/Sport',
@@ -225,9 +225,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Sport
   },
   {
-    path: '/Shopping',
-    name: 'Shopping',
-    component: Shopping
+    path: '/Volleyball',
+    name: 'Volleyball',
+    component: Volleyball
   }
 
   // { path: "*", redirect: "/" },

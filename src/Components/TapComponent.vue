@@ -4,9 +4,9 @@
        
 
         <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="music">
-            <ion-label>Music</ion-label>
-            <ion-icon name="musical-note"></ion-icon>
+          <ion-tab-button tab="Gym">
+            <ion-label>Gym</ion-label>
+            <ion-icon name="Gymal-note"></ion-icon>
           </ion-tab-button>
           <ion-tab-button tab="movies">
             <ion-label>Movies</ion-label>

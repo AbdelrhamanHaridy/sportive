@@ -4,7 +4,7 @@
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="tab1" href="/tabs/tab1">
-          <i class="fa-solid fa-house fa-2x"></i>
+          <i class="fa-solid fa-Running fa-2x"></i>
           <ion-label>Home</ion-label>
         </ion-tab-button>
           

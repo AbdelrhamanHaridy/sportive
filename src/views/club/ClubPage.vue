@@ -5,7 +5,7 @@
       <ion-row>
 
         <ion-col size="5">
-          <a href="/house" class="rout-link">
+          <a href="/Running" class="rout-link">
             <i class="fa-solid fa-lg fa-arrow-left-long"></i>
           </a>
         </ion-col>

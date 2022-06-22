@@ -7,12 +7,12 @@ import 'firebase/storage';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBtmYAKobVHQ059V83yZsN8NRRNQkucffY",
-    authDomain: "sportive-2daa7.firebaseapp.com",
-    projectId: "sportive-2daa7",
-    storageBucket: "sportive-2daa7.appspot.com",
-    messagingSenderId: "1082675055412",
-    appId: "1:1082675055412:web:2d7ac0bce067c4a4dc3361"
+    apiKey: "AIzaSyBWEE4GQ_zjoGFwRuC3zmFrkvY53FF8_j8",
+    authDomain: "sportive-341de.firebaseapp.com",
+    projectId: "sportive-341de",
+    storageBucket: "sportive-341de.appspot.com",
+    messagingSenderId: "874615624434",
+    appId: "1:874615624434:web:6411946f3726d57bdcf66b"
 };
 
 // Initialize Firebase
